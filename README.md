@@ -35,19 +35,19 @@ Chronological reconstruction of the full attack chain, showing the progression f
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    ATTACK SIMULATION                        │
-│  SSH Brute Force │ Windows RDP │ Priv Esc │ Cloud │ Exfil  │
-│  (6 Python scripts generating realistic multi-source logs) │
+│  SSH Brute Force │ Windows RDP │ Priv Esc │ Cloud │ Exfil   │
+│  (6 Python scripts generating realistic multi-source logs)  │
 └──────────────────────────┬──────────────────────────────────┘
                            │ Raw Logs (auth.log, Windows Events,
                            │ CloudTrail, DNS, Proxy, S3)
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                      SIEM ENGINE                            │
-│  ┌─────────────┐  ┌──────────────┐  ┌───────────────────┐  │
-│  │ Log Parser   │→│ Threat Intel │→│ Alert Correlation  │  │
-│  │ (7 formats)  │  │ (IOC DB)     │  │ (25 detection     │  │
-│  │              │  │              │  │  rules)            │  │
-│  └─────────────┘  └──────────────┘  └───────────────────┘  │
+│  ┌─────────────┐  ┌──────────────┐  ┌───────────────────┐   │ 
+│  │ Log Parser  │→│ Threat Intel  │ →│ Alert Correlation │   │
+│  │ (7 formats) │  │ (IOC DB)     │  │ (25 detection     │   │
+│  │             │  │              │  │  rules)           │   │
+│  └─────────────┘  └──────────────┘  └───────────────────┘   │
 └──────────────────────────┬──────────────────────────────────┘
                            │ Normalized Events + Alerts
                            ▼
