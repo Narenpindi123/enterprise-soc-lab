@@ -1,0 +1,26 @@
+[
+  {
+    "attack_type": "windows_brute_force",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "attacker_ip": "198.51.100.23",
+    "target_host": "WS-FIN-PC04",
+    "start_time": "2026-02-17T05:21:00",
+    "compromise_time": "2026-02-17T05:25:34.500000",
+    "compromised_account": "svc_backup",
+    "failed_attempts": 171,
+    "severity": "HIGH"
+  },
+  {
+    "attack_type": "windows_brute_force",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "attacker_ip": "203.0.113.45",
+    "target_host": "WS-FIN-PC04",
+    "start_time": "2026-02-17T11:36:00",
+    "compromise_time": "2026-02-17T11:38:44",
+    "compromised_account": "svc_backup",
+    "failed_attempts": 82,
+    "severity": "HIGH"
+  }
+]

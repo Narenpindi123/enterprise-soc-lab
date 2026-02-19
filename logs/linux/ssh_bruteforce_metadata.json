@@ -1,0 +1,35 @@
+[
+  {
+    "attack_type": "ssh_brute_force",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "attacker_ip": "198.51.100.23",
+    "target_host": "prod-web-01",
+    "start_time": "2026-02-17T05:30:00",
+    "compromise_time": "2026-02-17T05:33:37",
+    "compromised_user": "deploy",
+    "severity": "HIGH"
+  },
+  {
+    "attack_type": "ssh_brute_force",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "attacker_ip": "203.0.113.45",
+    "target_host": "prod-web-01",
+    "start_time": "2026-02-17T06:45:00",
+    "compromise_time": "2026-02-17T06:47:44",
+    "compromised_user": "deploy",
+    "severity": "HIGH"
+  },
+  {
+    "attack_type": "ssh_brute_force",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "attacker_ip": "192.0.2.100",
+    "target_host": "prod-web-01",
+    "start_time": "2026-02-17T06:23:00",
+    "compromise_time": "2026-02-17T06:27:56",
+    "compromised_user": "deploy",
+    "severity": "HIGH"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "attack_type": "linux_privilege_escalation",
+    "mitre_technique": "T1548.003",
+    "mitre_tactic": "Privilege Escalation",
+    "target_host": "prod-web-01",
+    "compromised_user": "deploy",
+    "start_time": "2026-02-17T08:00:00",
+    "suspicious_commands": 10,
+    "severity": "CRITICAL"
+  },
+  {
+    "attack_type": "suspicious_powershell",
+    "mitre_technique": "T1059.001",
+    "mitre_tactic": "Execution",
+    "target_host": "WS-FIN-PC04",
+    "compromised_user": "svc_backup",
+    "start_time": "2026-02-17T10:00:00",
+    "suspicious_commands": 8,
+    "severity": "CRITICAL"
+  }
+]

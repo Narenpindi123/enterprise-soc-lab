@@ -1,0 +1,29 @@
+[
+  {
+    "attack_type": "cron_persistence",
+    "mitre_technique": "T1053.003",
+    "mitre_tactic": "Persistence",
+    "target_host": "prod-web-01",
+    "start_time": "2026-02-17T11:00:00",
+    "malicious_crons": 3,
+    "severity": "HIGH"
+  },
+  {
+    "attack_type": "systemd_persistence",
+    "mitre_technique": "T1543.002",
+    "mitre_tactic": "Persistence",
+    "target_host": "prod-web-01",
+    "start_time": "2026-02-17T11:00:00",
+    "service_name": "system-update.service",
+    "severity": "CRITICAL"
+  },
+  {
+    "attack_type": "registry_run_key_persistence",
+    "mitre_technique": "T1547.001",
+    "mitre_tactic": "Persistence",
+    "target_host": "WS-FIN-PC04",
+    "start_time": "2026-02-17T16:00:00",
+    "malicious_keys": 3,
+    "severity": "HIGH"
+  }
+]

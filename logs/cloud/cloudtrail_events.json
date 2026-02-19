@@ -1,0 +1,1453 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE17018",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T02:40:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSecurityGroups",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "aa5eaed2-9cfa-413b-b57a-2f3f213d87d8",
+      "eventID": "e4c422f2-f752-466e-8079-e11e2a9e8050",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE37108",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T06:57:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketLocation",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "207d29c3-a265-4986-b539-5fdadbbfcd19",
+      "eventID": "723e3afd-d27a-41ab-89d4-fba4dce3921b",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE41048",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T06:59:00Z",
+      "eventSource": "cloudwatch.amazonaws.com",
+      "eventName": "DescribeAlarms",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "86152d5c-96c7-4521-80c9-702cd28375b6",
+      "eventID": "208443d4-00b1-4a67-a4a1-349f52f09372",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE16350",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T08:38:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "ListBuckets",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "1cafae64-2317-45a9-b669-6ff3dfd8c1ab",
+      "eventID": "a795520e-a7c7-45eb-b885-d91cdb1fca6a",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE61927",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T08:51:00Z",
+      "eventSource": "cloudwatch.amazonaws.com",
+      "eventName": "DescribeAlarms",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "e10137fe-7a7c-455b-b7c1-11305ec1cd08",
+      "eventID": "c257a926-8f50-4262-8bd7-b295da92aa8f",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE87463",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T09:50:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSecurityGroups",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "988e5094-4397-43bd-8610-0f2c12188968",
+      "eventID": "eee167d2-66f1-4134-9a91-85707775def0",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE95011",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T13:26:00Z",
+      "eventSource": "elasticloadbalancing.amazonaws.com",
+      "eventName": "DescribeLoadBalancers",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "4ba7a41b-a601-474a-b169-4b058d0b54fc",
+      "eventID": "ff06e29a-da92-4b36-8126-36b9743bc9b9",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE82168",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T13:36:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketLocation",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "8e55a207-2177-4a91-aa14-8fdb4f32e452",
+      "eventID": "378503fc-0c65-4c19-91de-ad5193a25eae",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE13123",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T13:56:00Z",
+      "eventSource": "cloudwatch.amazonaws.com",
+      "eventName": "DescribeAlarms",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "13fee70a-be09-49ff-811b-1615ebf7797e",
+      "eventID": "1b7ed5d4-1703-4fa6-a14c-0e21237e1d35",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE26285",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:00:00Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "GetCallerIdentity",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "a0071058-9e5d-4d65-95af-34b1ee1a3348",
+      "eventID": "dde254b2-b677-435d-b715-d2a574f2a725",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE17299",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:00:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateAccessKey",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {
+        "UserName": "dev-ops-svc"
+      },
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "bb0ed424-b900-488f-891a-817de9c7f6cf",
+      "eventID": "f19a4a94-2285-4a64-8919-39779ac28a2b",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE96648",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:01:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "ListUsers",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "2973f350-a73a-447c-a404-f65faf2fd07a",
+      "eventID": "e557770d-3dbb-4721-8fd7-ffb3abd0b4e8",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE42421",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:05:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateLoginProfile",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {
+        "UserName": "svc-cloudops"
+      },
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "6f8beb58-279c-49ce-89e8-eefaf63c0f12",
+      "eventID": "ea0afce1-9ede-4d37-885c-811629c35a39",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE31690",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:06:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "ListAttachedUserPolicies",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {
+        "UserName": "dev-ops-svc"
+      },
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "4f5df2da-fe71-4fe1-9505-2b96b32570b4",
+      "eventID": "3d470c18-5ebd-491e-8068-42ea844b2b38",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE94301",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:12:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachUserPolicy",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {
+        "UserName": "dev-ops-svc",
+        "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "6c3c8868-1d5b-4e57-b583-5d1f2832c5a2",
+      "eventID": "0ecd3a61-8160-4b61-a333-268413993066",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE78717",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:14:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateAccessKey",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {
+        "UserName": "svc-cloudops"
+      },
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "0921679d-65ac-432f-b492-fa25666efca8",
+      "eventID": "0a43cd75-b6e2-4020-9357-95b6e68dc73a",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE70662",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:18:00Z",
+      "eventSource": "elasticloadbalancing.amazonaws.com",
+      "eventName": "DescribeLoadBalancers",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "b1e372a5-de7e-4764-ba90-0bc66df1e149",
+      "eventID": "88db2102-4419-4ec1-acff-4ad8beb55dce",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE17268",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:18:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachUserPolicy",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {
+        "UserName": "svc-cloudops",
+        "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "2e656f5c-fd5a-4e48-880b-3f9249f35747",
+      "eventID": "767ae76b-6160-45d5-9c3f-eef7843efec5",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE88332",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:20:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateUser",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {
+        "UserName": "svc-cloudops"
+      },
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "7bf40db5-90d9-4d4b-9b29-c264ebfd39b1",
+      "eventID": "59b18d08-442c-4675-9e2e-e3df3492a93e",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE60130",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:20:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteAccountPasswordPolicy",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "d322e704-c283-4a9d-9ac4-32444c234c4a",
+      "eventID": "eab56957-01fb-4cd9-a182-d327114f8505",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/dev-ops-svc is not authorized to perform: DeleteAccountPasswordPolicy"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE30370",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:24:00Z",
+      "eventSource": "lambda.amazonaws.com",
+      "eventName": "ListFunctions",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "d4a3a696-7606-451f-81b4-4b500cf4b1b6",
+      "eventID": "e1754e30-5c62-427f-929a-828489cbd531",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE76353",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:26:00Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "ListSecrets",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "fb39309e-c8d8-43b4-9d55-caad5007eb69",
+      "eventID": "a31604e8-1343-4334-8663-7fd472a78943",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE75458",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:30:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "CreateSecurityGroup",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {
+        "GroupName": "debug-sg",
+        "Description": "Temp debug"
+      },
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "3c60ca1f-534e-4add-91d7-103b01a14b37",
+      "eventID": "217b01b0-2093-4f3a-838b-dae969649fcc",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE57081",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:32:00Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {
+        "RoleArn": "arn:aws:iam::123456789012:role/AdminRole",
+        "RoleSessionName": "maintenance"
+      },
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "dd6a21c0-2b4c-4df9-afe9-914ad5b3107d",
+      "eventID": "5886a17b-ef16-4c04-b428-350ba42e9673",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE97715",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:32:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteAccountPasswordPolicy",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "f33a63f3-4519-49fd-b5a1-ecb53969ef7d",
+      "eventID": "bd4c01f5-9e84-482a-bf7b-812da5080a82",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/dev-ops-svc is not authorized to perform: DeleteAccountPasswordPolicy"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE39680",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:45:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstances",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "37b1e5ca-1063-44c4-b299-33465f0e7c91",
+      "eventID": "d6f23a45-dc9e-4c0b-bc21-eb7385414d50",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE12819",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:46:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteAccountPasswordPolicy",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "8f4215ca-c41d-4570-acdf-642ab7e53b7e",
+      "eventID": "fc56c350-1353-4f21-a099-b7f73a26473c",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/dev-ops-svc is not authorized to perform: DeleteAccountPasswordPolicy"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE18457",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:54:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteAccountPasswordPolicy",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "1ecf916a-0c42-4c54-a719-4336c0625dff",
+      "eventID": "686c7036-b68a-421e-9ae1-3fadc534d8f7",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/dev-ops-svc is not authorized to perform: DeleteAccountPasswordPolicy"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE62895",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:55:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "AuthorizeSecurityGroupIngress",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {
+        "GroupName": "debug-sg",
+        "IpProtocol": "tcp",
+        "FromPort": 0,
+        "ToPort": 65535,
+        "CidrIp": "0.0.0.0/0"
+      },
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "5c739e77-4eb0-4803-8683-1d9630e0db9b",
+      "eventID": "0861ed21-59b4-49e2-b5be-5405d8106576",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE59916",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:56:00Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {
+        "SecretId": "prod/database/credentials"
+      },
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "31a46d32-6539-4060-ba77-51e16f058154",
+      "eventID": "98184b37-eaec-4743-a36a-303f896d0df2",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE57832",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T18:59:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteAccountPasswordPolicy",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "f11ab62e-c0c1-4e16-955b-6b8d9deb9517",
+      "eventID": "16dc5d3a-58bb-42e1-b26e-063df6594904",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/dev-ops-svc is not authorized to perform: DeleteAccountPasswordPolicy"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE84619",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T19:00:00Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "cb290baa-bc95-4ed9-9614-a83a89980c58",
+      "eventID": "15756b2a-8cb6-4333-9940-0fadd6b5eb34",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012",
+      "additionalEventData": {
+        "LoginTo": "https://console.aws.amazon.com/console/home?region=eu-west-1",
+        "MobileVersion": "No",
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE38914",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T20:19:00Z",
+      "eventSource": "cloudwatch.amazonaws.com",
+      "eventName": "DescribeAlarms",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "31d4d2f7-2de6-4c31-93c9-2edaddf900b2",
+      "eventID": "71906937-df16-46c0-924b-c50593d43ec4",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE34963",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-17T23:30:00Z",
+      "eventSource": "logs.amazonaws.com",
+      "eventName": "DescribeLogGroups",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "24f5243a-1728-415a-a23d-db50a8ca307c",
+      "eventID": "71dd3c0d-aa75-4f79-a4ee-f0c95ae65aa2",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE59946",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T02:52:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstances",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "4800ec5f-1ed4-4b44-befd-4a52cac91394",
+      "eventID": "7aa5bd50-dad1-42da-b347-1bfaea57e29e",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE81470",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T03:47:00Z",
+      "eventSource": "cloudwatch.amazonaws.com",
+      "eventName": "DescribeAlarms",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "f62512e4-a609-46fa-9fa4-cee5de25bf71",
+      "eventID": "11f74bb7-3237-484c-92d2-7f7cd881aa3d",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE18771",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T05:27:00Z",
+      "eventSource": "cloudwatch.amazonaws.com",
+      "eventName": "DescribeAlarms",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "3c345c51-7f65-439d-be0f-519fa485c94c",
+      "eventID": "0b1af64a-63bb-4b11-b17b-6d7e722073d1",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE22180",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T09:02:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSecurityGroups",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "6c6dfa33-9402-4d98-9f7f-604744e0c440",
+      "eventID": "79d5d691-9714-4b50-ae80-8dc977c16628",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE96393",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T09:28:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSecurityGroups",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "10a4b74c-0bd8-49c9-bb55-1659b5745a5f",
+      "eventID": "ba6a73c2-eca7-42d5-92e8-204c01943535",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE10278",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T11:10:00Z",
+      "eventSource": "cloudwatch.amazonaws.com",
+      "eventName": "DescribeAlarms",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "d59645b2-4fe7-4916-99d1-cd78a89302a3",
+      "eventID": "d4605a27-55b7-4f6a-863e-1bda097ddaec",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE68418",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T11:57:00Z",
+      "eventSource": "cloudwatch.amazonaws.com",
+      "eventName": "DescribeAlarms",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "eef512d1-4952-4533-9591-e9c8ec82b930",
+      "eventID": "114d7dfa-e2df-4576-814c-9c73feea0479",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE81754",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T12:18:00Z",
+      "eventSource": "logs.amazonaws.com",
+      "eventName": "DescribeLogGroups",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "6a3bf713-3d88-4aab-a5d1-52582ee39848",
+      "eventID": "91efeddd-5a2b-4627-9aa3-bd408f206b64",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE43297",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T12:25:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstances",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "d20f5354-4fd7-448a-8717-0cc897c30b86",
+      "eventID": "e1cbbf88-d309-484d-86ab-b2f4fd33650d",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE28604",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T13:18:00Z",
+      "eventSource": "elasticloadbalancing.amazonaws.com",
+      "eventName": "DescribeLoadBalancers",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "a57843d0-ca55-48ce-8854-0f7ee545d0b4",
+      "eventID": "0bd14e8a-b277-4e5f-baaf-2d3d424c4eb6",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE51509",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T13:41:00Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "GetCallerIdentity",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "59ee152f-10e4-427b-8488-93666290cf65",
+      "eventID": "b2a4141b-7acf-4df4-a5b1-ac97af09b5c9",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE91647",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T15:10:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSecurityGroups",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "8ece3ac9-5f08-40c2-bf28-53d555136ae4",
+      "eventID": "a6f4e507-2fff-449c-9dc4-ef9644de7aca",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE70532",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T15:32:00Z",
+      "eventSource": "logs.amazonaws.com",
+      "eventName": "DescribeLogGroups",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "7cab7d28-aad3-4087-ae9a-de640bd5054b",
+      "eventID": "d975d0e1-25b7-48be-b85a-0f8af2a8b6ab",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE17274",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T16:04:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketLocation",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "a84d215e-703b-4cba-9360-e7b297da9e3e",
+      "eventID": "0240ef06-005f-471d-a2d9-2e978244a6ab",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE57325",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T16:12:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketLocation",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "6ea762ea-0a08-4e53-83f1-37d39efafcb5",
+      "eventID": "8f4ac5bf-74f9-4adb-a6b7-7f15b7ad6854",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE91474",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T17:25:00Z",
+      "eventSource": "elasticloadbalancing.amazonaws.com",
+      "eventName": "DescribeLoadBalancers",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "25b68784-57fd-495b-b613-d30a0c064a08",
+      "eventID": "4d13eefe-acb4-4d2f-88c5-111050298044",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE80104",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T20:39:00Z",
+      "eventSource": "logs.amazonaws.com",
+      "eventName": "DescribeLogGroups",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "69aea269-1e23-4a9e-ae81-04c97efcb2e4",
+      "eventID": "f2d5c7a5-bd27-4ed0-95e4-769f5e234b1c",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE99071",
+        "arn": "arn:aws:iam::123456789012:user/dev-ops-svc",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "dev-ops-svc"
+      },
+      "eventTime": "2026-02-18T21:57:00Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "GetCallerIdentity",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.50",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/5.15.0-91-generic",
+      "requestParameters": {},
+      "responseElements": {
+        "_return": true
+      },
+      "requestID": "3c3b7c29-2669-4272-8327-350a91cbf28f",
+      "eventID": "3ad72847-8219-4607-8855-80fc8e2c3319",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012"
+    }
+  ]
+}

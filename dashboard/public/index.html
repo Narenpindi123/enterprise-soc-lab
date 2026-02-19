@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise SOC Dashboard | Security Operations Center</title>
+    <meta name="description"
+        content="Enterprise Security Operations Center Dashboard - Real-time threat detection, alert triage, and incident response">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">CorpSec SOC</span>
+                    <span class="logo-subtitle">Security Operations</span>
+                </div>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item active" data-view="overview">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7" />
+                    <rect x="14" y="3" width="7" height="7" />
+                    <rect x="3" y="14" width="7" height="7" />
+                    <rect x="14" y="14" width="7" height="7" />
+                </svg>
+                <span>Overview</span>
+            </li>
+            <li class="nav-item" data-view="alerts">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                    <line x1="12" y1="9" x2="12" y2="13" />
+                    <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+                <span>Alert Triage</span>
+                <span class="badge" id="alert-badge">0</span>
+            </li>
+            <li class="nav-item" data-view="investigation">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <span>Investigation</span>
+            </li>
+            <li class="nav-item" data-view="mitre">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
+                    <line x1="12" y1="22" x2="12" y2="15.5" />
+                    <polyline points="22 8.5 12 15.5 2 8.5" />
+                </svg>
+                <span>MITRE ATT&CK</span>
+            </li>
+            <li class="nav-item" data-view="timeline">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <span>Timeline</span>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <div class="analyst-info">
+                <div class="analyst-avatar">NA</div>
+                <div class="analyst-details">
+                    <span class="analyst-name">Naren Pindi</span>
+                    <span class="analyst-role">SOC Analyst</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Bar -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <h1 class="page-title" id="page-title">Security Overview</h1>
+                <span class="page-subtitle" id="page-subtitle">Real-time threat monitoring</span>
+            </div>
+            <div class="topbar-right">
+                <div class="status-indicator">
+                    <span class="status-dot live"></span>
+                    <span>MONITORING</span>
+                </div>
+                <div class="datetime" id="datetime"></div>
+            </div>
+        </header>
+
+        <!-- Views Container -->
+        <div class="views-container">
+            <!-- Overview View -->
+            <section class="view active" id="view-overview">
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card critical">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                <line x1="12" y1="9" x2="12" y2="13" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-critical">0</span>
+                            <span class="stat-label">Critical Alerts</span>
+                        </div>
+                    </div>
+                    <div class="stat-card high">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="8" x2="12" y2="12" />
+                                <line x1="12" y1="16" x2="12.01" y2="16" />
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-high">0</span>
+                            <span class="stat-label">High Alerts</span>
+                        </div>
+                    </div>
+                    <div class="stat-card events">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-events">0</span>
+                            <span class="stat-label">Total Events</span>
+                        </div>
+                    </div>
+                    <div class="stat-card sources">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                                <line x1="6" y1="6" x2="6.01" y2="6" />
+                                <line x1="6" y1="18" x2="6.01" y2="18" />
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-sources">0</span>
+                            <span class="stat-label">Log Sources</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Row 1 -->
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>Alert Severity Distribution</h3>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-severity"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>Alerts by MITRE ATT&CK Tactic</h3>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-tactics"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Row 2 -->
+                <div class="charts-grid">
+                    <div class="chart-card wide">
+                        <div class="chart-header">
+                            <h3>Failed Login Attempts Over Time</h3>
+                        </div>
+                        <div class="chart-body tall">
+                            <canvas id="chart-logins"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Row 3 -->
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>Events by Log Source</h3>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-sources"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>DNS Exfiltration Indicators</h3>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="chart-dns"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Alerts Table -->
+                <div class="table-card">
+                    <div class="table-header">
+                        <h3>Recent Critical & High Alerts</h3>
+                    </div>
+                    <div class="table-body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Alert ID</th>
+                                    <th>Severity</th>
+                                    <th>Rule</th>
+                                    <th>MITRE Technique</th>
+                                    <th>Timestamp</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="recent-alerts-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alert Triage View -->
+            <section class="view" id="view-alerts">
+                <div class="triage-controls">
+                    <div class="filter-group">
+                        <label>Severity</label>
+                        <select id="filter-severity">
+                            <option value="">All</option>
+                            <option value="CRITICAL">Critical</option>
+                            <option value="HIGH">High</option>
+                            <option value="MEDIUM">Medium</option>
+                            <option value="LOW">Low</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Status</label>
+                        <select id="filter-status">
+                            <option value="">All</option>
+                            <option value="NEW">New</option>
+                            <option value="IN_PROGRESS">In Progress</option>
+                            <option value="RESOLVED">Resolved</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Tactic</label>
+                        <select id="filter-tactic">
+                            <option value="">All Tactics</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="alerts-list" id="alerts-list">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+
+            <!-- Investigation View -->
+            <section class="view" id="view-investigation">
+                <div class="investigation-layout">
+                    <div class="search-panel">
+                        <h3>Log Search & Correlation</h3>
+                        <div class="search-box">
+                            <input type="text" id="search-query" placeholder="Search logs (IP, username, domain...)">
+                            <button id="search-btn" class="btn-primary">Search</button>
+                        </div>
+                        <div class="search-filters">
+                            <select id="search-source">
+                                <option value="">All Sources</option>
+                                <option value="linux_auth">Linux Auth</option>
+                                <option value="windows_security">Windows Security</option>
+                                <option value="windows_sysmon">Windows Sysmon</option>
+                                <option value="aws_cloudtrail">AWS CloudTrail</option>
+                                <option value="aws_s3">AWS S3</option>
+                                <option value="dns">DNS</option>
+                                <option value="proxy">Proxy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="results-panel">
+                        <div class="results-header">
+                            <span id="results-count">0 results</span>
+                        </div>
+                        <div class="results-list" id="search-results">
+                            <p class="empty-state">Enter a search query to investigate logs across all sources.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MITRE ATT&CK View -->
+            <section class="view" id="view-mitre">
+                <div class="mitre-header-info">
+                    <h3>MITRE ATT&CK Coverage Matrix</h3>
+                    <p>Detected techniques from the attack simulation mapped to the MITRE ATT&CK framework</p>
+                </div>
+                <div class="mitre-matrix" id="mitre-matrix">
+                    <!-- Populated by JS -->
+                </div>
+                <div class="mitre-details" id="mitre-details">
+                    <p class="empty-state">Click a technique to view associated alerts and evidence.</p>
+                </div>
+            </section>
+
+            <!-- Timeline View -->
+            <section class="view" id="view-timeline">
+                <div class="timeline-header-info">
+                    <h3>Attack Timeline Reconstruction</h3>
+                    <p>Complete attack chain from initial access to data exfiltration</p>
+                </div>
+                <div class="timeline-container" id="timeline-container">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/mitre.js"></script>
+</body>
+
+</html>

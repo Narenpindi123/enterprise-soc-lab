@@ -1,0 +1,621 @@
+[
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T00:52:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_1.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 41645
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T05:18:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_2.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 4454
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T10:27:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_5.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 15909
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T12:45:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_5.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 44538
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T14:02:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_3.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 40997
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "ListBucket",
+    "eventTime": "2026-02-17T14:33:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-customer-db-backups"
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "ListBucket",
+    "eventTime": "2026-02-17T14:46:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-financial-reports"
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "ListBucket",
+    "eventTime": "2026-02-17T14:48:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-hr-documents"
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "ListBucket",
+    "eventTime": "2026-02-17T14:55:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data"
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:02:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "hr/employees/salary_data_2026.csv"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 185533027
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:03:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-customer-db-backups",
+      "key": "hr/employees/salary_data_2026.csv"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 280020014
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:03:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-hr-documents",
+      "key": "hr/employees/salary_data_2026.csv"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 490129991
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:03:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-hr-documents",
+      "key": "finance/quarterly_reports/Q4_2025.xlsx"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 202574555
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:03:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "finance/quarterly_reports/Q4_2025.xlsx"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 143788450
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:04:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "customers/pii/customer_dump_full.sql.gz"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 133780775
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:05:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-financial-reports",
+      "key": "finance/quarterly_reports/Q4_2025.xlsx"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 126115637
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:06:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-hr-documents",
+      "key": "backups/database/prod_db_2026-02-17.tar.gz"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 446412674
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:07:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-hr-documents",
+      "key": "customers/pii/customer_dump_full.sql.gz"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 449295548
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:08:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-financial-reports",
+      "key": "hr/employees/ssn_records.csv"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 74873751
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:08:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-hr-documents",
+      "key": "hr/employees/ssn_records.csv"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 123619066
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:09:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-financial-reports",
+      "key": "backups/database/prod_db_2026-02-17.tar.gz"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 163343300
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:09:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-customer-db-backups",
+      "key": "backups/database/prod_db_2026-02-17.tar.gz"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 324856168
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:10:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "hr/employees/ssn_records.csv"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 86196095
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T15:12:00Z",
+    "sourceIPAddress": "198.51.100.23",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "dev-ops-svc",
+      "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+    },
+    "requestParameters": {
+      "bucketName": "corpsec-customer-db-backups",
+      "key": "finance/tax/w2_forms_2025.zip"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 164081796
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T18:42:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_5.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 4978
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T19:49:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_1.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 11613
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-17T20:14:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_3.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 37894
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-18T01:58:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_1.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 42856
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-18T03:39:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_4.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 10034
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-18T05:24:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_1.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 11811
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-18T14:20:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_5.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 30474
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-18T15:17:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_5.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 47016
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-18T16:48:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_5.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 32608
+    }
+  },
+  {
+    "eventVersion": "1.08",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetObject",
+    "eventTime": "2026-02-18T18:36:00Z",
+    "sourceIPAddress": "10.0.1.50",
+    "userAgent": "aws-cli/2.15.0",
+    "requestParameters": {
+      "bucketName": "corpsec-prod-data",
+      "key": "app/config/settings_3.json"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "bytesTransferredOut": 18237
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "attack_type": "aws_iam_escalation",
+    "mitre_technique": "T1078.004",
+    "mitre_tactic": "Privilege Escalation",
+    "compromised_key": "AKIAIOSFODNN7EXAMPLE",
+    "compromised_user": "dev-ops-svc",
+    "attacker_ip": "198.51.100.23",
+    "legitimate_region": "us-east-1",
+    "anomalous_region": "eu-west-1",
+    "start_time": "2026-02-17T18:00:00",
+    "actions_performed": 15,
+    "severity": "CRITICAL"
+  },
+  {
+    "attack_type": "aws_compromised_credentials",
+    "mitre_technique": "T1098.001",
+    "mitre_tactic": "Persistence",
+    "detail": "New access key and user created for persistent access",
+    "new_user_created": "svc-cloudops",
+    "start_time": "2026-02-17T18:00:00",
+    "severity": "CRITICAL"
+  }
+]

@@ -1,0 +1,14 @@
+{
+    "name": "enterprise-soc-dashboard",
+    "version": "1.0.0",
+    "description": "Enterprise SOC Lab - Security Operations Dashboard",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "cors": "^2.8.5"
+    }
+}

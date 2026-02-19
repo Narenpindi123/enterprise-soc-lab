@@ -1,0 +1,163 @@
+{
+  "simulation_start": "2026-02-17T00:00:00",
+  "simulation_duration_hours": 48,
+  "total_attack_scenarios": 15,
+  "attacks": [
+    {
+      "attack_type": "ssh_brute_force",
+      "mitre_technique": "T1110.001",
+      "mitre_tactic": "Credential Access",
+      "attacker_ip": "198.51.100.23",
+      "target_host": "prod-web-01",
+      "start_time": "2026-02-17T05:30:00",
+      "compromise_time": "2026-02-17T05:33:37",
+      "compromised_user": "deploy",
+      "severity": "HIGH"
+    },
+    {
+      "attack_type": "ssh_brute_force",
+      "mitre_technique": "T1110.001",
+      "mitre_tactic": "Credential Access",
+      "attacker_ip": "203.0.113.45",
+      "target_host": "prod-web-01",
+      "start_time": "2026-02-17T06:45:00",
+      "compromise_time": "2026-02-17T06:47:44",
+      "compromised_user": "deploy",
+      "severity": "HIGH"
+    },
+    {
+      "attack_type": "ssh_brute_force",
+      "mitre_technique": "T1110.001",
+      "mitre_tactic": "Credential Access",
+      "attacker_ip": "192.0.2.100",
+      "target_host": "prod-web-01",
+      "start_time": "2026-02-17T06:23:00",
+      "compromise_time": "2026-02-17T06:27:56",
+      "compromised_user": "deploy",
+      "severity": "HIGH"
+    },
+    {
+      "attack_type": "windows_brute_force",
+      "mitre_technique": "T1110.001",
+      "mitre_tactic": "Credential Access",
+      "attacker_ip": "198.51.100.23",
+      "target_host": "WS-FIN-PC04",
+      "start_time": "2026-02-17T05:21:00",
+      "compromise_time": "2026-02-17T05:25:34.500000",
+      "compromised_account": "svc_backup",
+      "failed_attempts": 171,
+      "severity": "HIGH"
+    },
+    {
+      "attack_type": "windows_brute_force",
+      "mitre_technique": "T1110.001",
+      "mitre_tactic": "Credential Access",
+      "attacker_ip": "203.0.113.45",
+      "target_host": "WS-FIN-PC04",
+      "start_time": "2026-02-17T11:36:00",
+      "compromise_time": "2026-02-17T11:38:44",
+      "compromised_account": "svc_backup",
+      "failed_attempts": 82,
+      "severity": "HIGH"
+    },
+    {
+      "attack_type": "linux_privilege_escalation",
+      "mitre_technique": "T1548.003",
+      "mitre_tactic": "Privilege Escalation",
+      "target_host": "prod-web-01",
+      "compromised_user": "deploy",
+      "start_time": "2026-02-17T08:00:00",
+      "suspicious_commands": 10,
+      "severity": "CRITICAL"
+    },
+    {
+      "attack_type": "suspicious_powershell",
+      "mitre_technique": "T1059.001",
+      "mitre_tactic": "Execution",
+      "target_host": "WS-FIN-PC04",
+      "compromised_user": "svc_backup",
+      "start_time": "2026-02-17T10:00:00",
+      "suspicious_commands": 8,
+      "severity": "CRITICAL"
+    },
+    {
+      "attack_type": "cron_persistence",
+      "mitre_technique": "T1053.003",
+      "mitre_tactic": "Persistence",
+      "target_host": "prod-web-01",
+      "start_time": "2026-02-17T11:00:00",
+      "malicious_crons": 3,
+      "severity": "HIGH"
+    },
+    {
+      "attack_type": "systemd_persistence",
+      "mitre_technique": "T1543.002",
+      "mitre_tactic": "Persistence",
+      "target_host": "prod-web-01",
+      "start_time": "2026-02-17T11:00:00",
+      "service_name": "system-update.service",
+      "severity": "CRITICAL"
+    },
+    {
+      "attack_type": "registry_run_key_persistence",
+      "mitre_technique": "T1547.001",
+      "mitre_tactic": "Persistence",
+      "target_host": "WS-FIN-PC04",
+      "start_time": "2026-02-17T16:00:00",
+      "malicious_keys": 3,
+      "severity": "HIGH"
+    },
+    {
+      "attack_type": "aws_iam_escalation",
+      "mitre_technique": "T1078.004",
+      "mitre_tactic": "Privilege Escalation",
+      "compromised_key": "AKIAIOSFODNN7EXAMPLE",
+      "compromised_user": "dev-ops-svc",
+      "attacker_ip": "198.51.100.23",
+      "legitimate_region": "us-east-1",
+      "anomalous_region": "eu-west-1",
+      "start_time": "2026-02-17T18:00:00",
+      "actions_performed": 15,
+      "severity": "CRITICAL"
+    },
+    {
+      "attack_type": "aws_compromised_credentials",
+      "mitre_technique": "T1098.001",
+      "mitre_tactic": "Persistence",
+      "detail": "New access key and user created for persistent access",
+      "new_user_created": "svc-cloudops",
+      "start_time": "2026-02-17T18:00:00",
+      "severity": "CRITICAL"
+    },
+    {
+      "attack_type": "dns_tunneling_exfiltration",
+      "mitre_technique": "T1071.004",
+      "mitre_tactic": "Exfiltration",
+      "source_ip": "10.0.1.50",
+      "c2_domain": "cdn-update.evil-corp.xyz",
+      "start_time": "2026-02-17T13:00:00",
+      "query_count": 200,
+      "severity": "HIGH"
+    },
+    {
+      "attack_type": "http_data_exfiltration",
+      "mitre_technique": "T1048.001",
+      "mitre_tactic": "Exfiltration",
+      "source_ip": "10.0.1.50",
+      "c2_ip": "198.51.100.23",
+      "start_time": "2026-02-17T10:00:00",
+      "estimated_data_exfiltrated": "~100MB",
+      "severity": "CRITICAL"
+    },
+    {
+      "attack_type": "s3_data_exfiltration",
+      "mitre_technique": "T1537",
+      "mitre_tactic": "Exfiltration",
+      "source_ip": "198.51.100.23",
+      "compromised_user": "dev-ops-svc",
+      "start_time": "2026-02-17T15:00:00",
+      "sensitive_files_accessed": 6,
+      "severity": "CRITICAL"
+    }
+  ]
+}

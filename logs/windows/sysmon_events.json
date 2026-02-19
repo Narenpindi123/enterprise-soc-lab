@@ -1,0 +1,88 @@
+[
+  {
+    "EventID": 13,
+    "TimeCreated": "2026-02-17T10:00:00Z",
+    "Computer": "WS-FIN-PC04.corpsec.local",
+    "Channel": "Microsoft-Windows-Sysmon/Operational",
+    "Provider": "Microsoft-Windows-Sysmon",
+    "Level": "Information",
+    "Task": "Registry value set",
+    "EventData": {
+      "EventType": "SetValue",
+      "ProcessId": 1839,
+      "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "TargetObject": "HKCU\\Software\\Google\\Chrome\\BrowserStartupSettings",
+      "Details": "\"1\""
+    }
+  },
+  {
+    "EventID": 13,
+    "TimeCreated": "2026-02-17T16:00:00Z",
+    "Computer": "WS-FIN-PC04.corpsec.local",
+    "Channel": "Microsoft-Windows-Sysmon/Operational",
+    "Provider": "Microsoft-Windows-Sysmon",
+    "Level": "Information",
+    "Task": "Registry value set",
+    "EventData": {
+      "EventType": "SetValue",
+      "ProcessId": 6481,
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "TargetObject": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\Config",
+      "Details": "\"NTP\""
+    }
+  },
+  {
+    "EventID": 13,
+    "TimeCreated": "2026-02-17T16:00:00Z",
+    "Computer": "WS-FIN-PC04.corpsec.local",
+    "Channel": "Microsoft-Windows-Sysmon/Operational",
+    "Provider": "Microsoft-Windows-Sysmon",
+    "Level": "Information",
+    "Task": "Registry value set",
+    "EventData": {
+      "RuleName": "technique_id=T1547.001,technique_name=Registry Run Keys",
+      "EventType": "SetValue",
+      "ProcessId": 4046,
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "User": "CORPSEC\\svc_backup",
+      "TargetObject": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\WindowsUpdater",
+      "Details": "\"C:\\Windows\\Temp\\svc.exe -hidden\""
+    }
+  },
+  {
+    "EventID": 13,
+    "TimeCreated": "2026-02-17T16:05:00Z",
+    "Computer": "WS-FIN-PC04.corpsec.local",
+    "Channel": "Microsoft-Windows-Sysmon/Operational",
+    "Provider": "Microsoft-Windows-Sysmon",
+    "Level": "Information",
+    "Task": "Registry value set",
+    "EventData": {
+      "RuleName": "technique_id=T1547.001,technique_name=Registry Run Keys",
+      "EventType": "SetValue",
+      "ProcessId": 5069,
+      "Image": "C:\\Windows\\System32\\powershell.exe",
+      "User": "CORPSEC\\svc_backup",
+      "TargetObject": "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\SecurityHealth",
+      "Details": "\"powershell.exe -w hidden -ep bypass -c IEX(gc C:\\Users\\Public\\config.ps1)\""
+    }
+  },
+  {
+    "EventID": 13,
+    "TimeCreated": "2026-02-17T16:10:00Z",
+    "Computer": "WS-FIN-PC04.corpsec.local",
+    "Channel": "Microsoft-Windows-Sysmon/Operational",
+    "Provider": "Microsoft-Windows-Sysmon",
+    "Level": "Information",
+    "Task": "Registry value set",
+    "EventData": {
+      "RuleName": "technique_id=T1547.001,technique_name=Registry Run Keys",
+      "EventType": "SetValue",
+      "ProcessId": 7765,
+      "Image": "C:\\Windows\\System32\\reg.exe",
+      "User": "CORPSEC\\svc_backup",
+      "TargetObject": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\SystemRestore",
+      "Details": "\"C:\\ProgramData\\svchost.exe\""
+    }
+  }
+]
