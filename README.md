@@ -4,6 +4,10 @@ A full-stack **Security Operations Center (SOC)** simulation environment that ge
 
 > Built to demonstrate real-world SOC analyst skills: log analysis, alert triage, threat detection, incident investigation, and MITRE ATT&CK mapping.
 
+## TL;DR
+
+A realistic enterprise SOC simulation that generates multi-stage attacks, correlates 1,200+ events into high-confidence alerts, and demonstrates how a SOC analyst detects, investigates, and responds to cloud and endpoint breaches using MITRE ATT&CK and NIST-aligned workflows.
+
 ---
 
 ## 🎯 Why This Project Matters
@@ -22,7 +26,7 @@ This project demonstrates how a SOC analyst:
 
 ---
 
-## � Measured Outcomes
+## 📊 Measured Outcomes
 
 | Metric | Result |
 |--------|--------|
@@ -36,7 +40,7 @@ This project demonstrates how a SOC analyst:
 
 ---
 
-## �📸 Dashboard Screenshots
+## 📸 Dashboard Screenshots
 
 ### Security Overview
 Real-time stats, severity distribution, MITRE tactic breakdown, and failed login trends.
@@ -237,7 +241,7 @@ Built-in IOC database with known-malicious:
 
 ---
 
-## � Incident Response & Decision-Making
+## 🚨 Incident Response & Decision-Making
 
 Each detected incident includes:
 - **Severity classification** (Low / Medium / High / Critical)
@@ -283,6 +287,16 @@ Covers: incident summary, business impact, attack timeline, root cause analysis,
 | Dashboard Frontend | HTML, CSS, JavaScript |
 | Charts | Chart.js |
 | Styling | Custom dark theme CSS |
+
+---
+
+## 🔮 Future Enhancements
+
+- Integrate real-time log ingestion (Kafka / Beats)
+- Add SOAR-style automated response actions
+- Expand cloud coverage to Azure and GCP
+- Implement user/entity behavior analytics (UEBA)
+- Add role-based access control (RBAC) to dashboard
 
 ---
 
